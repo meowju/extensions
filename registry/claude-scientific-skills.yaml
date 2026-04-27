@@ -1,0 +1,12 @@
+name: Claude Scientific Skills
+description: Specialized skills for scientific research, covering biology, chemistry, and SEC data analysis.
+url: https://github.com/K-Dense-AI/claude-scientific-skills
+superpowers:
+  - Deep domain expertise in biology and chemistry
+  - SEC financial data analysis
+  - Advanced data processing for scientific workloads
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add K-Dense-AI/claude-scientific-skills
+  install_command: /plugin install claude-scientific-skills
+  notes: High-fidelity expertise for technical research fields.

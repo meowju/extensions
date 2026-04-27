@@ -1,0 +1,12 @@
+name: gstack
+description: Role-based governance framework that provides specialist personas (Founder, Engineer, QA) for a virtual development team.
+url: https://github.com/garrytan/gstack
+superpowers:
+  - Role-based alignment (CEO, Senior Engineer, QA)
+  - Specialized decision-making framework using slash commands
+  - Improves technical rigor by forcing perspective shifts
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add garrytan/gstack
+  install_command: /plugin install gstack
+  notes: Created by Garry Tan. Encourages higher engineering standards through defined roles.

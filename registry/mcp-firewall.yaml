@@ -1,0 +1,12 @@
+name: MCP Firewall
+description: A policy engine that intercepts agent tool requests to enforce security boundaries.
+url: https://github.com/dzervas/mcp-firewall
+superpowers:
+  - Runtime tool-use interception
+  - Customizable safety policy enforcement
+  - Prevents agents from executing high-risk commands without oversight
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add dzervas/mcp-firewall
+  install_command: /plugin install mcp-firewall
+  notes: Essential for deploying fully autonomous agents in production environments.

@@ -1,0 +1,12 @@
+name: Everything Claude Code (ECC)
+description: A comprehensive framework for AI coding agents with specialized subagents, security hooks, and memory management.
+url: https://github.com/affaan-m/everything-claude-code
+superpowers:
+  - Specialized Subagents (TDD, Planning, Security)
+  - AgentShield security scanner
+  - Token optimization and lazy-loading skills
+  - Session-to-session memory persistence
+installation:
+  type: script/config
+  command: Follow repository instructions to link configuration files or use provided setup scripts.
+  notes: Acts as an "infrastructure layer" rather than just a set of prompts.

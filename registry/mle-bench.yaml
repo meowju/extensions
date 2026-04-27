@@ -1,0 +1,11 @@
+name: MLE-Bench
+description: A comprehensive benchmark and library used to evaluate and train "Machine Learning Engineer" agents.
+url: https://github.com/openai/mle-bench
+superpowers:
+  - Quantitative evaluation of ML engineering capability
+  - Standardized tasks for agent training and verification
+  - Benchmark-driven improvement of agentic skills
+installation:
+  type: pip
+  command: pip install mle-bench
+  notes: The gold standard for verifying if an agent can actually train and optimize other models.

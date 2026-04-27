@@ -1,0 +1,11 @@
+name: Ollama
+description: The standard tool for running high-performance local LLMs (Llama 3, Mistral, Gemma) on your own hardware.
+url: https://github.com/ollama/ollama
+superpowers:
+  - Local model execution for complete privacy
+  - Supports Llama 3, Mistral, DeepSeek-Coder
+  - Native MCP support via community servers
+installation:
+  type: script
+  command: curl -fsSL https://ollama.com/install.sh | sh
+  notes: Essential for private "Sovereign" tasks where data cannot leave the local environment.

@@ -1,0 +1,11 @@
+name: MCP Memory Server
+description: The official Model Context Protocol server for persistent knowledge across agent sessions.
+url: https://github.com/modelcontextprotocol/servers/tree/main/src/memory
+superpowers:
+  - Session-to-session knowledge persistence
+  - Graph-based memory retrieval
+  - Shared memory bus for multi-agent coordination
+installation:
+  type: mcp_config
+  command: Register the memory server in your MCP bridge config.
+  notes: The critical component for long-term agent learning and alignment.

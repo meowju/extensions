@@ -1,0 +1,12 @@
+name: SAS Audio Processor
+description: Audio processing suite for MIDI extraction and signal processing via Claude.
+url: https://github.com/shiehn/sas-audio-processor
+superpowers:
+  - MIDI extraction from audio sources
+  - Signal processing and audio analysis
+  - Integration between creative intent and technical execution
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add shiehn/sas-audio-processor
+  install_command: /plugin install sas-audio-processor
+  notes: Excellent for AI-driven acoustic and musical exploration.

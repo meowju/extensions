@@ -1,0 +1,11 @@
+name: RAGFlow
+description: A deep Retrieval-Augmented Generation (RAG) system for complex document parsing and high-fidelity knowledge extraction.
+url: https://github.com/infiniflow/ragflow
+superpowers:
+  - Advanced PDF/Document parsing with layout awareness
+  - High-precision retrieval for complex queries
+  - Visual RAG workflow management
+installation:
+  type: self_hosted/docker
+  command: docker-compose -f docker-compose-canvas.yml up -d
+  notes: Best for building agents that need to "read and understand" massive legacy documentation sets.

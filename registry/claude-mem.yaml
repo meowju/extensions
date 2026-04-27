@@ -1,0 +1,12 @@
+name: Claude-Mem
+description: A persistent memory plugin for Claude Code that uses a background worker and SQLite database.
+url: https://github.com/thedotmack/claude-mem
+superpowers:
+  - Persistent memory across sessions
+  - Background worker service for autonomous memory management
+  - SQLite-backed storage for fast retrieval
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add thedotmack/claude-mem
+  install_command: /plugin install claude-mem
+  notes: Do not use npm install -g for standard use; use the marketplace commands inside Claude Code. Requires Node.js >= 18.

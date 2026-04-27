@@ -1,0 +1,12 @@
+name: Gemini Interactions API
+description: A specialized skill set for building "Deep Research" agents capable of long-running background tasks.
+url: https://github.com/google-gemini/gemini-interactions-api
+superpowers:
+  - Long-running background task orchestration
+  - Deep research capabilities with high-fidelity retrieval
+  - Protocol for stateful background execution
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add google-gemini/gemini-interactions-api
+  install_command: /plugin install gemini-interactions-api
+  notes: Best for building autonomous research swarms that run for hours/days.

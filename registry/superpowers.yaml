@@ -1,0 +1,12 @@
+name: Superpowers
+description: An agentic skills framework and methodology enforcing structured development, specifically Test-Driven Development (TDD). 
+url: https://github.com/obra/superpowers
+superpowers:
+  - Enforced TDD (Red-Green-Refactor)
+  - Composable skills for brainstorming, planning, and systematic debugging
+  - Reduces "babysitting" through disciplined software development workflows
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add obra/superpowers
+  install_command: /plugin install superpowers
+  notes: Focuses on process discipline to keep AI aligned with high-quality engineering standards.

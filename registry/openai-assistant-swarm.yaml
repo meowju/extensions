@@ -1,0 +1,11 @@
+name: OpenAI Assistant Swarm
+description: A Node.js library for high-parallelism delegation from a "Manager Assistant" to specialized OpenAI Assistants.
+url: https://github.com/Mintplex-Labs/openai-assistant-swarm
+superpowers:
+  - Parallel task delegation using OpenAI's Assistants API
+  - Manager-worker hierarchy for complex engineering jobs
+  - Unified state management across multiple specialized assistants
+installation:
+  type: npm
+  command: npm install openai-assistant-swarm
+  notes: Best for large-scale engineering tasks where the context can be split across specialized workers.

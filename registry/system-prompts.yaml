@@ -1,0 +1,10 @@
+name: Claude Code System Prompts
+description: A repository for understanding Claude’s internal logic and architecture-level prompt engineering.
+url: https://github.com/Piebald-AI/claude-code-system-prompts
+superpowers:
+  - Inside view of agentic logic
+  - Advanced prompt engineering at the architecture level
+  - Understanding hidden tool constraints and capabilities
+installation:
+  type: reference
+  notes: Use this for deep diagnostic research when tuning your own swarm prompts.

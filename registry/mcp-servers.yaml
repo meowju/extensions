@@ -1,0 +1,11 @@
+name: MCP Servers (Official Index)
+description: The official index for the Model Context Protocol (MCP). Acts as the "App Store" for AI agents.
+url: https://github.com/modelcontextprotocol/servers
+superpowers:
+  - Connects Claude to Google Drive, Slack, GitHub
+  - Access to local filesystems through standardized protocol
+  - Wide range of community and official connectors
+installation:
+  type: mcp_config
+  command: Register the desired server in your meow-bridge.json or ~/.meow/mcp.json.
+  notes: The foundation of modern agentic tool-use.

@@ -1,0 +1,11 @@
+name: Gemini CLI
+description: The official terminal interface for Gemini, featuring a 1M+ token context window for massive codebase analysis.
+url: https://github.com/google-gemini/gemini-cli
+superpowers:
+  - 1M+ token context window for monolithic repository analysis
+  - Native terminal integration for rapid iteration
+  - Generous free tier for high-volume developer workloads
+installation:
+  type: npm
+  command: npm install -g @google/gemini-cli
+  notes: Best tool for analyzing legacy codebases that exceed standard model context limits.
