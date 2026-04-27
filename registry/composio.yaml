@@ -1,0 +1,11 @@
+name: Composio
+description: A skill aggregator that gives agents the "hands" to work across Salesforce, HubSpot, and Pipedrive with unified auth.
+url: https://github.com/ComposioHQ/composio
+superpowers:
+  - Unified authentication for 90+ tools (Salesforce, HubSpot, etc.)
+  - High-precision function calling for CRM and Sales workflows
+  - Managed "executor" environments for tool reliability
+installation:
+  type: pip
+  command: pip install composio-core
+  notes: Best for agents that need to reach into multiple fragmented business platforms.

@@ -1,0 +1,12 @@
+name: aiAgentStudio (Pluto)
+description: Enterprise-grade Salesforce framework for autonomous lead qualification and case routing.
+url: https://github.com/aiAgentStudio/pluto
+superpowers:
+  - Natural language management of Salesforce records
+  - Autonomous lead qualification and case routing
+  - Respects enterprise permission sets and governance
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add aiAgentStudio/pluto
+  install_command: /plugin install pluto
+  notes: Essential for high-stakes enterprise sales and support automation.

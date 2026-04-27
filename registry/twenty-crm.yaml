@@ -1,0 +1,11 @@
+name: Twenty.com
+description: Modern, agent-first open-source CRM with a native MCP server for real-time reporting.
+url: https://github.com/twentyhq/twenty
+superpowers:
+  - Agentic-first CRM architecture
+  - Native MCP server for real-time deal and contact reporting
+  - Highly customizable open-source sales infrastructure
+installation:
+  type: mcp_config
+  command: Configure the Twenty.com MCP server in your local Meow environment.
+  notes: Best for startups looking for an AI-native alternative to Salesforce.

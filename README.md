@@ -2,6 +2,20 @@
 
 Welcome to the central nervous system for Meowju skills, superpowers, and configurations. This directory acts as a local registry and instruction set for expanding your agentic workstation with industry-leading AI patterns.
 
+## 📌 Index
+- [🏆 The Foundation (The Big Three)](#-the-foundation-the-big-three)
+- [🛍️ E-commerce Platform Skills](#️-e-commerce-platform-skills)
+- [🏢 CRM & Sales "Hands"](#-crm--sales-hands)
+- [🌌 Multi-Model Orchestration](#-multi-model-orchestration)
+- [♊ Gemini Power Tools](#-gemini-power-tools)
+- [🤖 OpenAI & Codex Ecosystem](#-openai--codex-ecosystem)
+- [🎵 Audio & Music Production](#-audio--music-production)
+- [🛡️ Security & Observability](#️-security--observability)
+- [🧰 Swiss Army Skills (MCP Servers)](#-swiss-army-skills-mcp-servers)
+- [🛠️ Specialized Agent Frameworks](#️-specialized-agent-frameworks)
+
+---
+
 ## 📁 Directory Structure
 - **`registry/`**: Contains YAML definitions for external superpowers, their capabilities, and installation methods.
 - **`instruction.md`**: The master guide for Meow agents on how to install and activate these skills.
@@ -13,12 +27,17 @@ Welcome to the central nervous system for Meowju skills, superpowers, and config
 - **Claude Skills (alirezarezvani)**: 235+ production-ready engineering & C-level skills.
 - **MCP Servers (Official)**: The "App Store" for AI tools (GitHub, Slack, GDrive).
 
-### 🛠️ Specialized Agent Frameworks
-- **Everything Claude Code (ECC)**: Infrastructure and performance toolkit.
-- **gstack**: Role-based specialist governance.
-- **GSD (Get Shit Done)**: Context engineering for large projects.
-- **Superpowers**: Structured TDD and disciplined workflows.
-- **Awesome Subagents (VoltAgent)**: Ready-made domain expert agents.
+### 🛍️ E-commerce Platform Skills
+- **mcp-adapter**: Official WooCommerce/WordPress abilities bridge.
+- **Clawify**: Open-source Shopify copilot and bridge.
+- **Triple Whale Moby**: E-commerce Business Intelligence (ROAS/CAC/LTV).
+- **Gorgias AI Agent**: Automated support and order edits for Shopify.
+- **Firecrawl**: Competitor store crawling and pricing extraction.
+
+### 🏢 CRM & Sales "Hands"
+- **aiAgentStudio (Pluto)**: Enterprise Salesforce case routing and lead qualification.
+- **Twenty.com**: Agentic-first open-source CRM with native MCP.
+- **Composio**: Multi-platform (HubSpot, Pipedrive) skill aggregator.
 
 ### 🌌 Multi-Model Orchestration
 - **LangGraph**: Stateful graph-based agents with time-travel debugging.
@@ -35,11 +54,11 @@ Welcome to the central nervous system for Meowju skills, superpowers, and config
 - **Assistant Swarm**: Parallel delegation to specialized OpenAI Assistants.
 - **MLE-Bench**: Benchmarking and evaluating ML engineer agents.
 
-### 🧪 Domain Power Skills
-- **Scientific Research (K-Dense-AI)**: Lab research and SEC data analysis.
+### 🎵 Audio & Music Production
+- **Audio Metadata MCP**: ID3/ISRC tagging for stancsz production workflows.
+- **Epidemic Sound MCP**: Creative, context-aware audio curation.
+- **FFmpeg MCP**: Natural language audio conversion and beat detection.
 - **Audio Processor (shiehn)**: Signal processing and MIDI extraction.
-- **Database Mastery (PlanetScale)**: Automated MySQL migration/indexing.
-- **Creative Tools (punkpeye)**: Blender, Figma, and Photopea connectors.
 
 ### 🛡️ Security & Observability
 - **MCP Firewall**: Runtime safety policy engine.
@@ -48,7 +67,7 @@ Welcome to the central nervous system for Meowju skills, superpowers, and config
 
 ### 🧰 Swiss Army Skills (MCP Servers)
 - **Memory Server**: Persistent session knowledge.
-- **n8n**: 400+ app connectors as agent skills.
+- **n8n**: 400+ app connectors as agent skills (Shopify + CRM flow logic).
 - **RAGFlow**: Layout-aware deep document parsing.
 - **Ollama**: Local model execution for total privacy.
 - **Dify**: The definitive "Skill Aggregator" and visual platform.
