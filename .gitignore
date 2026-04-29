@@ -11,3 +11,6 @@
 
 # PDF files in scratch
 scratch/scratch/*.pdf
+
+# Symlinks (they point to external repos)
+test-link/
