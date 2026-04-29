@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator UI</title>
+  <style>
+    /* ============================================
+       CSS VARIABLES & THEME
+       ============================================ */
+    :root {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-display: #0f0f1a;
+      --bg-button: #1f2937;
+      --bg-button-hover: #374151;
+      --bg-operator: #f59e0b;
+      --bg-operator-hover: #fbbf24;
+      --bg-clear: #ef4444;
+      --bg-clear-hover: #f87171;
+      --bg-equal: #10b981;
+      --bg-equal-hover: #34d399;
+      
+      --text-primary: #ffffff;
+      --text-secondary: #9ca3af;
+      --text-display: #60a5fa;
+      
+      --border-radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+      
+      --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: var(--text-primary);
+    }
+
+    /* ============================================
+       CALCULATOR CONTAINER
+       ============================================ */
+    .calculator {
+      background: var(--bg-secondary);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      max-width: 360px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* ============================================
+       DISPLAY
+       ============================================ */
+    .display {
+      background: var(--bg-display);
+      border-radius: var(--border-radius);
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: right;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .display-expression {
+      font-family: var(--font-mono);
+      font-size: 16px;
+      color: var(--text-secondary);
+      min-height: 24px;
+      word-break: break-all;
+      margin-bottom: 8px;
+    }
+
+    .display-result {
+      font-family: var(--font-mono);
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--text-display);
+      word-break: break-all;
+      line-height: 1.1;
+    }
+
+    .display-result.error {
+      color: var(--bg-clear);
+      font-size: 24px;
+    }
+
+    /* ============================================
+       BUTTON GRID
+       ============================================ */
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    /* ============================================
+       BUTTONS
+       ============================================ */
+    .btn {
+      font-family: var(--font-sans);
+      font-size: 20px;
+      font-weight: 500;
+      padding: 18px;
+      border: none;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      outline: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+
+    .btn:focus {
+      box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+    }
+
+    /* Number buttons */
+    .btn-number {
+      background: var(--bg-button);
+      color: var(--text-primary);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-number:hover {
+      background: var(--bg-button-hover);
+    }
+
+    .btn-number:active {
+      background: var(--bg-button);
+    }
+
+    /* Zero button spans 2 columns */
+    .btn-zero {
+      grid-column: span 2;
+    }
+
+    /* Operator buttons */
+    .btn-operator {
+      background: var(--bg-operator);
+      color: #1a1a2e;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-operator:hover {
+      background: var(--bg-operator-hover);
+    }
+
+    /* Clear button */
+    .btn-clear {
+      background: var(--bg-clear);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-clear:hover {
+      background: var(--bg-clear-hover);
+    }
+
+    /* Equals button */
+    .btn-equal {
+      background: var(--bg-equal);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-equal:hover {
+      background: var(--bg-equal-hover);
+    }
+
+    /* Memory buttons */
+    .btn-memory {
+      background: #6366f1;
+      color: white;
+      font-size: 14px;
+    }
+
+    .btn-memory:hover {
+      background: #818cf8;
+    }
+
+    /* ============================================
+       MEMORY INDICATOR
+       ============================================ */
+    .memory-indicator {
+      font-size: 12px;
+      color: var(--bg-operator);
+      margin-top: 8px;
+      text-align: right;
+      min-height: 16px;
+    }
+
+    /* ============================================
+       KEYBOARD HINTS
+       ============================================ */
+    .keyboard-hint {
+      margin-top: 16px;
+      font-size: 11px;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+
+    .keyboard-hint kbd {
+      background: var(--bg-button);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      margin: 0 2px;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 400px) {
+      .calculator {
+        padding: 16px;
+      }
+
+      .btn {
+        padding: 14px;
+        font-size: 18px;
+      }
+
+      .display-result {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <!-- Display -->
+    <div class="display">
+      <div class="display-expression" id="expression"></div>
+      <div class="display-result" id="result">0</div>
+      <div class="memory-indicator" id="memory"></div>
+    </div>
+
+    <!-- Memory Row -->
+    <div class="button-grid" style="margin-bottom: 12px;">
+      <button class="btn btn-memory" data-action="MC">MC</button>
+      <button class="btn btn-memory" data-action="MR">MR</button>
+      <button class="btn btn-memory" data-action="M+">M+</button>
+      <button class="btn btn-memory" data-action="M-">M−</button>
+    </div>
+
+    <!-- Button Grid -->
+    <div class="button-grid">
+      <button class="btn btn-clear" data-action="clear">AC</button>
+      <button class="btn btn-operator" data-action="+/-">±</button>
+      <button class="btn btn-operator" data-action="%">%</button>
+      <button class="btn btn-operator" data-action="/">÷</button>
+
+      <button class="btn btn-number" data-number="7">7</button>
+      <button class="btn btn-number" data-number="8">8</button>
+      <button class="btn btn-number" data-number="9">9</button>
+      <button class="btn btn-operator" data-action="*">×</button>
+
+      <button class="btn btn-number" data-number="4">4</button>
+      <button class="btn btn-number" data-number="5">5</button>
+      <button class="btn btn-number" data-number="6">6</button>
+      <button class="btn btn-operator" data-action="-">−</button>
+
+      <button class="btn btn-number" data-number="1">1</button>
+      <button class="btn btn-number" data-number="2">2</button>
+      <button class="btn btn-number" data-number="3">3</button>
+      <button class="btn btn-operator" data-action="+">+</button>
+
+      <button class="btn btn-number btn-zero" data-number="0">0</button>
+      <button class="btn btn-number" data-number=".">.</button>
+      <button class="btn btn-equal" data-action="=">=</button>
+    </div>
+
+    <!-- Keyboard Hints -->
+    <div class="keyboard-hint">
+      Use keyboard: <kbd>0-9</kbd> <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd> <kbd>Enter</kbd> <kbd>Esc</kbd>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * SimpleCalculatorUI - Standalone HTML Calculator
+     * Works without any external dependencies
+     */
+
+    class SimpleCalculator {
+      constructor() {
+        // State
+        this.currentValue = '0';
+        this.previousValue = null;
+        this.operator = null;
+        this.waitingForOperand = false;
+        this.expression = '';
+        this.memory = 0;
+        this.hasError = false;
+
+        // DOM elements
+        this.display = document.getElementById('result');
+        this.expressionEl = document.getElementById('expression');
+        this.memoryEl = document.getElementById('memory');
+
+        // Initialize
+        this.updateDisplay();
+        this.bindEvents();
+      }
+
+      // ============================================
+      // DISPLAY
+      // ============================================
+
+      updateDisplay() {
+        this.display.textContent = this.currentValue;
+        this.expressionEl.textContent = this.expression;
+        this.memoryEl.textContent = this.memory !== 0 ? `M: ${this.formatNumber(this.memory)}` : '';
+
+        if (this.hasError) {
+          this.display.classList.add('error');
+        } else {
+          this.display.classList.remove('error');
+        }
+      }
+
+      formatNumber(value) {
+        if (value === 0) return '0';
+        const str = String(value);
+        if (str.length > 12) {
+          return parseFloat(value.toPrecision(10)).toString();
+        }
+        return str;
+      }
+
+      // ============================================
+      // INPUT HANDLERS
+      // ============================================
+
+      bindEvents() {
+        // Button clicks
+        document.querySelectorAll('.btn').forEach(btn => {
+          btn.addEventListener('click', () => this.handleButton(btn));
+        });
+
+        // Keyboard input
+        document.addEventListener('keydown', (e) => this.handleKeyboard(e));
+      }
+
+      handleButton(btn) {
+        if (btn.dataset.number !== undefined) {
+          this.inputDigit(btn.dataset.number);
+        } else if (btn.dataset.action) {
+          this.handleAction(btn.dataset.action);
+        }
+      }
+
+      handleKeyboard(e) {
+        const key = e.key;
+
+        // Prevent default for calculator keys
+        if (/^[0-9.]$/.test(key) || ['+', '-', '*', '/', 'Enter', 'Escape', 'Backspace'].includes(key)) {
+          e.preventDefault();
+        }
+
+        // Number input
+        if (/^[0-9.]$/.test(key)) {
+          this.inputDigit(key);
+        }
+        // Operators
+        else if (key === '+') this.handleAction('+');
+        else if (key === '-') this.handleAction('-');
+        else if (key === '*') this.handleAction('*');
+        else if (key === '/') this.handleAction('/');
+        // Actions
+        else if (key === 'Enter' || key === '=') this.handleAction('=');
+        else if (key === 'Escape') this.handleAction('clear');
+        else if (key === 'Backspace') this.handleAction('backspace');
+        else if (key === '%') this.handleAction('%');
+      }
+
+      // ============================================
+      // CALCULATOR LOGIC
+      // ============================================
+
+      inputDigit(digit) {
+        if (this.hasError) {
+          this.clear();
+        }
+
+        if (this.waitingForOperand) {
+          this.currentValue = digit === '.' ? '0.' : digit;
+          this.waitingForOperand = false;
+        } else {
+          // Handle decimal point
+          if (digit === '.') {
+            if (this.currentValue.includes('.')) return;
+            this.currentValue += '.';
+          } else {
+            // Limit to 12 digits
+            const cleanValue = this.currentValue.replace(/[^0-9]/g, '');
+            if (cleanValue.length >= 12) return;
+            
+            this.currentValue = this.currentValue === '0' ? digit : this.currentValue + digit;
+          }
+        }
+
+        this.updateDisplay();
+      }
+
+      handleAction(action) {
+        switch (action) {
+          case 'clear':
+            this.clear();
+            break;
+          case '+/-':
+            this.toggleSign();
+            break;
+          case '%':
+            this.percent();
+            break;
+          case 'backspace':
+            this.backspace();
+            break;
+          case '+':
+          case '-':
+          case '*':
+          case '/':
+            this.setOperator(action);
+            break;
+          case '=':
+            this.calculate();
+            break;
+          case 'MC':
+            this.memoryClear();
+            break;
+          case 'MR':
+            this.memoryRecall();
+            break;
+          case 'M+':
+            this.memoryAdd();
+            break;
+          case 'M-':
+            this.memorySubtract();
+            break;
+        }
+        this.updateDisplay();
+      }
+
+      clear() {
+        this.currentValue = '0';
+        this.previousValue = null;
+        this.operator = null;
+        this.waitingForOperand = false;
+        this.expression = '';
+        this.hasError = false;
+        this.updateDisplay();
+      }
+
+      backspace() {
+        if (this.hasError) {
+          this.clear();
+          return;
+        }
+        
+        if (this.waitingForOperand) return;
+        
+        if (this.currentValue.length > 1) {
+          this.currentValue = this.currentValue.slice(0, -1);
+        } else {
+          this.currentValue = '0';
+        }
+        this.updateDisplay();
+      }
+
+      toggleSign() {
+        if (this.currentValue === '0') return;
+        if (this.currentValue.startsWith('-')) {
+          this.currentValue = this.currentValue.slice(1);
+        } else {
+          this.currentValue = '-' + this.currentValue;
+        }
+        this.updateDisplay();
+      }
+
+      percent() {
+        const value = parseFloat(this.currentValue);
+        this.currentValue = this.formatNumber(value / 100);
+        this.updateDisplay();
+      }
+
+      setOperator(nextOperator) {
+        const inputValue = parseFloat(this.currentValue);
+
+        // If there's a pending operation, calculate first
+        if (this.operator && !this.waitingForOperand) {
+          this.calculate(true);
+        }
+
+        this.previousValue = parseFloat(this.currentValue);
+        this.operator = nextOperator;
+        this.waitingForOperand = true;
+        
+        // Build expression string
+        const opSymbol = {
+          '+': '+',
+          '-': '−',
+          '*': '×',
+          '/': '÷'
+        }[nextOperator] || nextOperator;
+        
+        this.expression = `${this.formatNumber(this.previousValue)} ${opSymbol}`;
+        this.updateDisplay();
+      }
+
+      calculate(keepOperator = false) {
+        if (!this.operator || this.previousValue === null) return;
+
+        const prev = this.previousValue;
+        const current = parseFloat(this.currentValue);
+        let result;
+
+        try {
+          switch (this.operator) {
+            case '+':
+              result = prev + current;
+              break;
+            case '-':
+              result = prev - current;
+              break;
+            case '*':
+              result = prev * current;
+              break;
+            case '/':
+              if (current === 0) throw new Error('Division by zero');
+              result = prev / current;
+              break;
+            default:
+              return;
+          }
+
+          // Handle precision
+          result = parseFloat(result.toPrecision(12));
+
+          this.currentValue = this.formatNumber(result);
+          this.expression = `${this.formatNumber(prev)} ${{
+            '+': '+',
+            '-': '−',
+            '*': '×',
+            '/': '÷'
+          }[this.operator]} ${this.formatNumber(current)} = ${this.formatNumber(result)}`;
+          
+          this.previousValue = result;
+          this.operator = keepOperator ? this.operator : null;
+          this.waitingForOperand = true;
+          this.hasError = false;
+
+        } catch (error) {
+          this.currentValue = error.message;
+          this.hasError = true;
+          this.expression = '';
+        }
+
+        this.updateDisplay();
+      }
+
+      // ============================================
+      // MEMORY OPERATIONS
+      // ============================================
+
+      memoryClear() {
+        this.memory = 0;
+        this.updateDisplay();
+      }
+
+      memoryRecall() {
+        if (this.memory !== 0) {
+          this.currentValue = this.formatNumber(this.memory);
+          this.waitingForOperand = true;
+          this.updateDisplay();
+        }
+      }
+
+      memoryAdd() {
+        this.memory += parseFloat(this.currentValue);
+        this.memory = parseFloat(this.memory.toPrecision(12));
+        this.updateDisplay();
+      }
+
+      memorySubtract() {
+        this.memory -= parseFloat(this.currentValue);
+        this.memory = parseFloat(this.memory.toPrecision(12));
+        this.updateDisplay();
+      }
+    }
+
+    // ============================================
+    // INITIALIZE
+    // ============================================
+
+    const calculator = new SimpleCalculator();
+  </script>
+</body>
+</html>

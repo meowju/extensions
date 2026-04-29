@@ -1,0 +1,173 @@
+/**
+ * Calculator Design Tokens
+ * 
+ * [V3.6] Single Source of Truth for all calculator CSS tokens.
+ * Consolidated from styles/Calculator.css and ui/styles.css.
+ * 
+ * @module styles/calculator.tokens.css
+ * @version 3.6.0
+ * @unified-source true
+ */
+
+/* ============================================================================
+   CSS VARIABLES - CALCULATOR TOKENS
+   ============================================================================ */
+
+:root {
+  /* ==========================================================================
+     COLOR TOKENS - Dark Theme (default)
+     ====================================================================== */
+  
+  /* Background Colors */
+  --calc-bg-primary: #1a1a2e;
+  --calc-bg-display: #16213e;
+  --calc-bg-button: #2d2d44;
+  --calc-bg-button-hover: #3d3d5c;
+  --calc-bg-button-active: #4d4d6c;
+  
+  /* Button Colors - Numbers */
+  --calc-bg-button-number: #3a3a5a;
+  --calc-bg-button-hover-number: #4a4a6a;
+  
+  /* Button Colors - Operators */
+  --calc-bg-button-operator: #e67e22;
+  --calc-bg-operator-hover: #f39c12;
+  
+  /* Button Colors - Functions */
+  --calc-bg-button-function: #5a5a7a;
+  --calc-bg-function-hover: #6a6a8a;
+  
+  /* Button Colors - Memory */
+  --calc-bg-button-memory: #2980b9;
+  --calc-bg-memory-hover: #3498db;
+  
+  /* Button Colors - Clear */
+  --calc-bg-button-clear: #c0392b;
+  --calc-bg-clear-hover: #e74c3c;
+  
+  /* Accent Colors - Equals */
+  --calc-accent-equals: #e67e22;
+  --calc-accent-equals-hover: #f39c12;
+  --calc-accent-equals-active: #d35400;
+  
+  /* Text Colors */
+  --calc-text-primary: #ffffff;
+  --calc-text-secondary: #a0a0a0;
+  --calc-text-display: #00ff88;
+  --calc-text-dark: #1a1a2e;
+  
+  /* Pressed State */
+  --calc-btn-pressed: rgba(255, 255, 255, 0.2);
+  
+  /* ==========================================================================
+     TYPOGRAPHY TOKENS
+     ====================================================================== */
+  
+  --calc-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --calc-font-display: 'Orbitron', 'Roboto Mono', monospace;
+  --calc-font-weight-semibold: 600;
+  
+  /* Font Sizes */
+  --calc-font-size-xs: 0.75rem;
+  --calc-font-size-sm: 0.875rem;
+  --calc-font-size-base: 1rem;
+  --calc-font-size-lg: 1.5rem;
+  --calc-font-size-xl: 2.5rem;
+  
+  /* ==========================================================================
+     SPACING TOKENS
+     ====================================================================== */
+  
+  --calc-spacing-xs: 4px;
+  --calc-spacing-sm: 8px;
+  --calc-spacing-md: 12px;
+  --calc-spacing-lg: 16px;
+  --calc-spacing-xl: 20px;
+  
+  /* ==========================================================================
+     GEOMETRY TOKENS
+     ====================================================================== */
+  
+  --calc-radius-sm: 6px;
+  --calc-radius-md: 8px;
+  --calc-radius-lg: 12px;
+  
+  /* ==========================================================================
+     SHADOW TOKENS
+     ====================================================================== */
+  
+  --calc-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  --calc-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  --calc-shadow-button: 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --calc-shadow-button-active: 0 2px 3px rgba(0, 0, 0, 0.3);
+  --calc-shadow-container: 0 10px 40px rgba(0, 0, 0, 0.4);
+  --calc-shadow-display: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  
+  /* ==========================================================================
+     LAYOUT TOKENS
+     ====================================================================== */
+  
+  --calc-max-width: 400px;
+  --calc-button-height: 60px;
+  --calc-button-height-compact: 50px;
+  
+  /* ==========================================================================
+     TRANSITION TOKENS
+     ====================================================================== */
+  
+  --calc-transition-fast: 0.1s ease;
+  --calc-transition-normal: 0.15s ease;
+  
+  /* ==========================================================================
+     FOCUS TOKENS
+     ====================================================================== */
+  
+  --calc-focus-ring: #00ff88;
+  --calc-focus-ring-offset: 2px;
+}
+
+/* ============================================================================
+   LIGHT THEME (optional override)
+   ============================================================================ */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --calc-bg-primary: #f5f5f5;
+    --calc-bg-display: #ffffff;
+    --calc-bg-button: #e0e0e0;
+    --calc-bg-button-hover: #d0d0d0;
+    --calc-bg-button-number: #ffffff;
+    --calc-bg-button-hover-number: #f0f0f0;
+    --calc-bg-button-operator: #e67e22;
+    --calc-bg-button-function: #d0d0d0;
+    --calc-bg-button-clear: #e74c3c;
+    --calc-text-primary: #1a1a1a;
+    --calc-text-secondary: #666666;
+    --calc-text-display: #00aa55;
+    --calc-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    --calc-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    --calc-shadow-button: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ============================================================================
+   HIGH CONTRAST MODE
+   ============================================================================ */
+
+@media (prefers-contrast: high) {
+  :root {
+    --calc-focus-ring: #ffffff;
+    --calc-focus-ring-offset: 3px;
+  }
+}
+
+/* ============================================================================
+   REDUCED MOTION
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --calc-transition-fast: 0s;
+    --calc-transition-normal: 0s;
+  }
+}

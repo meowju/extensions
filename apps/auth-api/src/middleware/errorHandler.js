@@ -1,0 +1,15 @@
+export const errorHandler = (err, req, res, next) => {
+  console.error('Error:', err);
+
+  if (err.type === 'entity.parse.failed') {
+    return res.status(400).json({ error: 'Invalid JSON' });
+  }
+
+  if (err.code === 'SQLITE_CONSTRAINT_UNIQUE') {
+    return res.status(409).json({ error: 'Username or email already exists' });
+  }
+
+  res.status(500).json({ error: 'Internal server error' });
+};
+
+export default errorHandler;

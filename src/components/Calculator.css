@@ -1,0 +1,229 @@
+/**
+ * Calculator Styles
+ *
+ * Component-specific styles using CSS tokens.
+ * Themeable via the calculator.tokens.css design system.
+ *
+ * @module components/Calculator.css
+ * @version 1.0.0
+ */
+
+/* ============================================================================
+   CALCULATOR CONTAINER
+   ============================================================================ */
+
+.calculator {
+  /* Use CSS tokens */
+  font-family: var(--calc-font-body);
+  background: var(--calc-bg-primary);
+  border-radius: var(--calc-radius-lg);
+  padding: var(--calc-spacing-md);
+  max-width: var(--calc-max-width);
+  box-shadow: var(--calc-shadow-container);
+  outline: none;
+  transition: box-shadow var(--calc-transition-normal);
+}
+
+.calculator:focus-visible {
+  box-shadow: var(--calc-shadow-container), 0 0 0 var(--calc-focus-ring-offset) var(--calc-focus-ring);
+}
+
+/* ============================================================================
+   DISPLAY
+   ============================================================================ */
+
+.calculator__display {
+  background: var(--calc-bg-display);
+  border-radius: var(--calc-radius-md);
+  padding: var(--calc-spacing-md);
+  margin-bottom: var(--calc-spacing-md);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow: var(--calc-shadow-display);
+}
+
+.calculator__expression {
+  font-family: var(--calc-font-display);
+  font-size: var(--calc-font-size-sm);
+  color: var(--calc-text-secondary);
+  min-height: 1.25rem;
+  margin-bottom: var(--calc-spacing-xs);
+  text-align: right;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calculator__value {
+  font-family: var(--calc-font-display);
+  font-size: var(--calc-font-size-xl);
+  color: var(--calc-text-display);
+  text-align: right;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: font-size var(--calc-transition-fast);
+}
+
+/* ============================================================================
+   BUTTON GRID
+   ============================================================================ */
+
+.calculator__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--calc-spacing-sm);
+}
+
+.calculator__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--calc-spacing-sm);
+}
+
+/* ============================================================================
+   BUTTON BASE STYLES
+   ============================================================================ */
+
+.calculator__button {
+  font-family: var(--calc-font-body);
+  font-size: var(--calc-font-size-lg);
+  font-weight: var(--calc-font-weight-semibold);
+  color: var(--calc-text-primary);
+  background: var(--calc-bg-button-number);
+  border: none;
+  border-radius: var(--calc-radius-md);
+  padding: var(--calc-spacing-md);
+  cursor: pointer;
+  transition:
+    background-color var(--calc-transition-normal),
+    transform var(--calc-transition-fast),
+    box-shadow var(--calc-transition-normal);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--calc-shadow-button);
+  height: var(--calc-button-height);
+}
+
+.calculator__button:hover:not(:disabled) {
+  background: var(--calc-bg-button-hover);
+}
+
+.calculator__button:active:not(:disabled) {
+  transform: scale(0.95);
+  box-shadow: var(--calc-shadow-button-active);
+}
+
+.calculator__button:focus-visible {
+  outline: 2px solid var(--calc-focus-ring);
+  outline-offset: var(--calc-focus-ring-offset);
+}
+
+.calculator__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.calculator__button-label {
+  line-height: 1;
+}
+
+/* ============================================================================
+   BUTTON VARIANTS
+   ============================================================================ */
+
+/* Number buttons */
+.calculator__button--number {
+  background: var(--calc-bg-button-number);
+}
+
+.calculator__button--number:hover:not(:disabled) {
+  background: var(--calc-bg-button-hover);
+}
+
+/* Zero button (spans 2 columns) */
+.calculator__button--zero {
+  grid-column: span 2;
+  background: var(--calc-bg-button-number);
+}
+
+.calculator__button--zero:hover:not(:disabled) {
+  background: var(--calc-bg-button-hover);
+}
+
+/* Operator buttons */
+.calculator__button--operator {
+  background: var(--calc-bg-button-operator);
+  color: var(--calc-text-primary);
+}
+
+.calculator__button--operator:hover:not(:disabled) {
+  background: var(--calc-bg-operator-hover);
+}
+
+/* Function buttons (C, ±, %) */
+.calculator__button--function {
+  background: var(--calc-bg-button-function);
+  color: var(--calc-text-dark);
+}
+
+.calculator__button--function:hover:not(:disabled) {
+  background: var(--calc-bg-function-hover);
+}
+
+/* Equals button */
+.calculator__button--equals {
+  background: var(--calc-accent-equals);
+  color: var(--calc-text-primary);
+}
+
+.calculator__button--equals:hover:not(:disabled) {
+  background: var(--calc-accent-equals-hover);
+}
+
+.calculator__button--equals:active:not(:disabled) {
+  background: var(--calc-accent-equals-active);
+}
+
+/* ============================================================================
+   COL SPAN UTILITY
+   ============================================================================ */
+
+.calculator__button--span-2 {
+  grid-column: span 2;
+}
+
+/* ============================================================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================================================ */
+
+@media (max-width: 400px) {
+  .calculator {
+    padding: var(--calc-spacing-sm);
+  }
+
+  .calculator__button {
+    padding: var(--calc-spacing-sm);
+    font-size: var(--calc-font-size-base);
+    height: var(--calc-button-height-compact);
+  }
+
+  .calculator__display {
+    padding: var(--calc-spacing-sm);
+    min-height: 80px;
+  }
+
+  .calculator__value {
+    font-size: 2rem;
+  }
+}

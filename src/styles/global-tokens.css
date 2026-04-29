@@ -1,0 +1,396 @@
+/**
+ * Global Design Tokens - Single Source of Truth
+ * 
+ * [V3.6] UNIFIED - Consolidated all color values into CSS variables.
+ * All calculator components now reference these tokens.
+ * 
+ * @version 3.6.0
+ * @unified-source true
+ */
+
+/* ============================================================================
+   CSS CUSTOM PROPERTIES (GLOBAL TOKENS)
+   ============================================================================ */
+
+:root {
+  /* ========================================================================
+     COLOR TOKENS
+     ======================================================================== */
+  
+  /* Background Colors */
+  --calc-bg-primary: #1a1a2e;
+  --calc-bg-secondary: #16213e;
+  --calc-bg-display: #0a0a0f;
+  --calc-bg-button-number: #0f3460;
+  --calc-bg-button-operator: #e94560;
+  --calc-bg-button-function: #f5a623;
+  --calc-bg-button-hover: #1a4a7a;
+  --calc-bg-operator-hover: #ff6b6b;
+  --calc-bg-function-hover: #ffb84d;
+  --calc-bg-history: #2a2a3d;
+  --calc-bg-button-base: #2d2d3d;
+  --calc-bg-button-base-hover: #3d3d4d;
+  --calc-bg-button-base-active: #4d4d5d;
+  
+  /* Text Colors */
+  --calc-text-primary: #ffffff;
+  --calc-text-secondary: #a0a0a0;
+  --calc-text-muted: #8888aa;
+  --calc-text-display: #00ff88;
+  --calc-text-dark: #1a1a2e;
+  
+  /* Accent Colors */
+  --calc-accent-equals: #6366f1;
+  --calc-accent-equals-hover: #818cf8;
+  --calc-accent-equals-active: #4f46e5;
+  
+  /* Border Colors */
+  --calc-border-subtle: #333;
+  --calc-border-muted: #555;
+  
+  /* Focus/Accessibility */
+  --calc-focus-ring: var(--calc-text-display);
+  --calc-focus-ring-offset: 2px;
+  
+  /* Error State */
+  --calc-error: #ff4444;
+  
+  /* ========================================================================
+     TYPOGRAPHY TOKENS
+     ======================================================================== */
+  
+  --calc-font-display: 'Orbitron', 'Roboto Mono', monospace;
+  --calc-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --calc-font-size-xs: 0.75rem;
+  --calc-font-size-sm: 0.875rem;
+  --calc-font-size-base: 1rem;
+  --calc-font-size-lg: 1.5rem;
+  --calc-font-size-xl: 2.5rem;
+  --calc-font-size-display: 48px;
+  
+  --calc-font-weight-light: 300;
+  --calc-font-weight-normal: 400;
+  --calc-font-weight-medium: 500;
+  --calc-font-weight-semibold: 600;
+  
+  /* ========================================================================
+     SPACING TOKENS
+     ======================================================================== */
+  
+  --calc-spacing-xs: 4px;
+  --calc-spacing-sm: 8px;
+  --calc-spacing-md: 16px;
+  --calc-spacing-lg: 24px;
+  --calc-spacing-xl: 32px;
+  
+  /* Border Radius */
+  --calc-radius-sm: 6px;
+  --calc-radius-md: 8px;
+  --calc-radius-lg: 12px;
+  --calc-radius-xl: 20px;
+  
+  /* ========================================================================
+     SHADOW TOKENS
+     ======================================================================== */
+  
+  --calc-shadow-button: 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --calc-shadow-button-active: 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --calc-shadow-container: 0 10px 40px rgba(0, 0, 0, 0.4);
+  --calc-shadow-display: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  --calc-shadow-dropdown: 0 25px 50px rgba(0, 0, 0, 0.4);
+  
+  /* ========================================================================
+     TRANSITION TOKENS
+     ======================================================================== */
+  
+  --calc-transition-fast: 100ms ease-out;
+  --calc-transition-normal: 150ms ease;
+  --calc-transition-slow: 300ms ease;
+  
+  /* ========================================================================
+     LAYOUT TOKENS
+     ======================================================================== */
+  
+  --calc-max-width: 320px;
+  --calc-max-width-lg: 380px;
+  --calc-button-height: 60px;
+  --calc-button-height-compact: 50px;
+  
+  /* ========================================================================
+     Z-INDEX TOKENS
+     ======================================================================== */
+  
+  --calc-z-base: 0;
+  --calc-z-dropdown: 100;
+  --calc-z-modal: 1000;
+  --calc-z-tooltip: 2000;
+}
+
+/* ============================================================================
+   LEGACY ALIASES (for backward compatibility)
+   ============================================================================ */
+
+:root {
+  /* Legacy naming conventions - mapped to new tokens */
+  --calc-bg: var(--calc-bg-primary);
+  --calc-display-bg: var(--calc-bg-display);
+  --calc-display-text: var(--calc-text-display);
+  --calc-number-bg: var(--calc-bg-button-number);
+  --calc-number-hover: var(--calc-bg-button-hover);
+  --calc-operator-bg: var(--calc-bg-button-operator);
+  --calc-operator-hover: var(--calc-bg-operator-hover);
+  --calc-function-bg: var(--calc-bg-button-function);
+  --calc-function-hover: var(--calc-bg-function-hover);
+  --calc-text-primary: var(--calc-text-primary);
+  --calc-text-secondary: var(--calc-text-secondary);
+  --calc-shadow: var(--calc-shadow-container);
+  --calc-shadow-inset: var(--calc-shadow-display);
+  --calc-button-shadow: var(--calc-shadow-button);
+}
+
+/* ============================================================================
+   BASE CALCULATOR STYLES
+   ============================================================================ */
+
+/**
+ * Calculator container - applies to all calculator instances
+ * Uses CSS variables for complete theming flexibility
+ */
+
+.calculator {
+  font-family: var(--calc-font-body);
+  background: var(--calc-bg-primary);
+  border-radius: var(--calc-radius-lg);
+  padding: var(--calc-spacing-md);
+  max-width: var(--calc-max-width);
+  box-shadow: var(--calc-shadow-container);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.calculator:focus-visible {
+  box-shadow: var(--calc-shadow-container), 0 0 0 var(--calc-focus-ring-offset) var(--calc-focus-ring);
+}
+
+.calculator--focused {
+  box-shadow: var(--calc-shadow-container), 0 0 0 var(--calc-focus-ring-offset) var(--calc-focus-ring);
+}
+
+/* ============================================================================
+   DISPLAY STYLES
+   ============================================================================ */
+
+.calculator__display {
+  background: var(--calc-bg-display);
+  border-radius: var(--calc-radius-md);
+  padding: var(--calc-spacing-lg);
+  margin-bottom: var(--calc-spacing-md);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow: var(--calc-shadow-display);
+}
+
+.calculator__expression {
+  font-family: var(--calc-font-display);
+  font-size: var(--calc-font-size-sm);
+  color: var(--calc-text-secondary);
+  margin-bottom: var(--calc-spacing-xs);
+  min-height: 1.25rem;
+  text-align: right;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calculator__value {
+  font-family: var(--calc-font-display);
+  font-size: var(--calc-font-size-xl);
+  color: var(--calc-text-display);
+  text-align: right;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.calculator__value::-webkit-scrollbar {
+  display: none;
+}
+
+.calculator__value--error {
+  color: var(--calc-error);
+}
+
+/* ============================================================================
+   BUTTON STYLES
+   ============================================================================ */
+
+.calculator__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--calc-spacing-sm);
+}
+
+.calculator__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--calc-spacing-sm);
+}
+
+.calculator__cell {
+  display: contents;
+}
+
+.calculator__cell--zero {
+  grid-column: span 2;
+}
+
+.calculator__cell--zero .calculator__button {
+  width: 100%;
+}
+
+.calculator__button {
+  font-family: var(--calc-font-body);
+  font-size: var(--calc-font-size-lg);
+  font-weight: var(--calc-font-weight-semibold);
+  color: var(--calc-text-primary);
+  background: var(--calc-bg-button-base);
+  border: none;
+  border-radius: var(--calc-radius-md);
+  padding: var(--calc-button-height-compact) var(--calc-spacing-md);
+  cursor: pointer;
+  transition: background-color var(--calc-transition-normal), 
+              transform var(--calc-transition-fast), 
+              box-shadow var(--calc-transition-normal);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--calc-shadow-button);
+}
+
+.calculator__button:hover:not(:disabled) {
+  background: var(--calc-bg-button-base-hover);
+}
+
+.calculator__button:active:not(:disabled) {
+  transform: scale(0.95);
+  box-shadow: var(--calc-shadow-button-active);
+}
+
+.calculator__button:focus-visible {
+  outline: 2px solid var(--calc-focus-ring);
+  outline-offset: var(--calc-focus-ring-offset);
+}
+
+.calculator__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.calculator__button-label {
+  line-height: 1;
+}
+
+/* Number buttons */
+.calculator__button--number {
+  background: var(--calc-bg-button-number);
+}
+
+.calculator__button--number:hover:not(:disabled) {
+  background: var(--calc-bg-button-hover);
+}
+
+/* Operator buttons */
+.calculator__button--operator {
+  background: var(--calc-bg-button-operator);
+  color: var(--calc-text-primary);
+}
+
+.calculator__button--operator:hover:not(:disabled) {
+  background: var(--calc-bg-operator-hover);
+}
+
+/* Function buttons (C, ±, %) */
+.calculator__button--function {
+  background: var(--calc-bg-button-function);
+  color: var(--calc-text-dark);
+}
+
+.calculator__button--function:hover:not(:disabled) {
+  background: var(--calc-bg-function-hover);
+}
+
+/* Equals button */
+.calculator__button--equals {
+  background: var(--calc-accent-equals);
+  color: var(--calc-text-primary);
+}
+
+.calculator__button--equals:hover:not(:disabled) {
+  background: var(--calc-accent-equals-hover);
+}
+
+/* Zero button spanning two columns */
+.calculator__button--zero {
+  grid-column: span 2;
+}
+
+/* ============================================================================
+   GRID LAYOUT VARIANT (alternative layout using CSS grid)
+   ============================================================================ */
+
+.calculator__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--calc-spacing-sm);
+}
+
+/* ============================================================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================================================ */
+
+@media (max-width: 360px) {
+  .calculator {
+    padding: var(--calc-spacing-sm);
+  }
+  
+  .calculator__display {
+    padding: var(--calc-spacing-md);
+  }
+  
+  .calculator__value {
+    font-size: var(--calc-font-size-lg);
+  }
+}
+
+/* ============================================================================
+   DARK MODE OVERRIDES (optional)
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  /* Already optimized for dark mode by default */
+}
+
+/* ============================================================================
+   REDUCED MOTION (accessibility)
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .calculator__button {
+    transition: none;
+  }
+  
+  .calculator__button:active:not(:disabled) {
+    transform: none;
+  }
+}
