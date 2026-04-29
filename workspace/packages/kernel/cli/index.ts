@@ -518,7 +518,7 @@ async function main() {
     const prompt = filteredArgs.join(" ");
 
     // Initialize TUI for single task
-    const singleTui = createTUI({ mode: "compact", showStatusBar: true });
+    const singleTui = createTUI();
     singleTui.setStatus({ mode: "single-task", dangerous });
     singleTui.printHeader();
     singleTui.printUser(prompt);
@@ -761,7 +761,7 @@ async function main() {
   }
 
   // Interactive mode — initialize TUI
-  tui = createTUI({ mode: "compact", showStatusBar: true });
+  tui = createTUI();
   tui.setStatus({ mode: "interactive", dangerous: false });
   tui.printHeader();
   tui.printStatusBar();

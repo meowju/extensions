@@ -1,0 +1,39 @@
+{
+  "date": "2026-04-29T03:28:09.048Z",
+  "model": "MiniMax-M2.7",
+  "passRate": 100,
+  "passed": 5,
+  "total": 5,
+  "results": [
+    {
+      "task": "hello-world",
+      "pass": true,
+      "reason": "OK",
+      "time": 9153
+    },
+    {
+      "task": "two-sum",
+      "pass": true,
+      "reason": "OK",
+      "time": 11011
+    },
+    {
+      "task": "fizzbuzz",
+      "pass": true,
+      "reason": "OK",
+      "time": 8248
+    },
+    {
+      "task": "palindrome",
+      "pass": true,
+      "reason": "OK",
+      "time": 12304
+    },
+    {
+      "task": "reverse-string",
+      "pass": true,
+      "reason": "OK",
+      "time": 6161
+    }
+  ]
+}
