@@ -1,0 +1,13 @@
+# Review-related files
+**/*review*
+**/*Review*
+**/code-review*
+**/reviewer*
+
+# Reports
+**/*_report.md
+**/*_report.pdf
+**/BIOMEDICAL_IMPROVEMENT_REPORT.md
+
+# PDF files in scratch
+scratch/scratch/*.pdf
