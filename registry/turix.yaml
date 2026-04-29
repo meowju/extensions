@@ -1,0 +1,14 @@
+name: turix
+description: State-of-the-art computer-use-agent (CUA) for desktop automation. Achieves 80% success on Mac benchmark, MCP-ready for Claude integration.
+url: https://github.com/TurixAI/TuriX-CUA
+superpowers:
+  - Computer-use agent with 64.2% OSWorld benchmark (3rd place)
+  - Multi-agent architecture (brain, actor, memory, planner roles)
+  - MCP integration for Claude Desktop and third-party agents
+  - Hot-swappable brain models (Qwen3-VL, Gemini, local Ollama)
+  - Skills system for markdown-based task playbooks
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add TurixAI/TuriX-CUA
+  install_command: pip install turix && python examples/main.py
+  notes: "80% success on macOS, 64.2% on OSWorld. Supports macOS 15+, Windows (multi-agent-windows branch), Linux (multi-agent-linux branch)"

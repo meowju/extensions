@@ -2,6 +2,29 @@
   "version": "1.0.0",
   "name": "Meowju Harness Registry",
   "description": "Single Source of Truth mapping to prevent architectural drift.",
+  "extensions": {
+    "turix": {
+      "name": "turix",
+      "path": "registry/turix.yaml",
+      "url": "https://github.com/TurixAI/TuriX-CUA",
+      "description": "State-of-the-art computer-use-agent (CUA) for desktop automation. 80% macOS success, 64.2% OSWorld.",
+      "added": "2026-04-28"
+    },
+    "self-operating-computer": {
+      "name": "self-operating-computer",
+      "path": "registry/self-operating-computer.yaml",
+      "url": "https://github.com/OthersideAI/self-operating-computer",
+      "description": "Framework enabling multimodal models to operate computers like a human. 10.2k stars.",
+      "added": "2026-04-28"
+    },
+    "fazm": {
+      "name": "fazm",
+      "path": "registry/fazm.yaml",
+      "url": "https://github.com/mediar-ai/fazm",
+      "description": "Voice-driven AI computer agent for macOS. Browser automation, code writing, Google Apps.",
+      "added": "2026-04-28"
+    }
+  },
   "sources_of_truth": {
     "CalculatorLogic": {
       "path": "packages/harness/src/calculator/calculator.ts",

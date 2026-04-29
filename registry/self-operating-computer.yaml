@@ -1,0 +1,14 @@
+name: self-operating-computer
+description: Framework enabling multimodal models to operate computers using mouse and keyboard like a human operator.
+url: https://github.com/OthersideAI/self-operating-computer
+superpowers:
+  - Multimodal computer operation (GPT-4o, GPT-4.1, o1, Claude 3, Gemini Pro Vision, Qwen-VL, LLaVa)
+  - Optical Character Recognition (OCR) mode for element detection
+  - Set-of-Mark (SoM) prompting with YOLOv8 button detection
+  - Voice mode for speech-to-task input
+  - Cross-platform (Mac, Windows, Linux)
+installation:
+  type: pip
+  add_command: pip install self-operating-computer
+  install_command: operate
+  notes: "10.2k stars, 1.4k forks. Released Nov 2023 - one of first full computer-use examples. OCR mode performs best."

@@ -1,0 +1,14 @@
+name: fazm
+description: AI computer agent that controls browser, writes code, handles documents, operates Google Apps, and learns your workflow from voice.
+url: https://github.com/mediar-ai/fazm
+superpowers:
+  - Voice-driven AI agent for macOS (14.0+)
+  - Browser automation and web interaction
+  - Code writing and document handling
+  - Google Apps integration
+  - Desktop Swift/SwiftUI app with ACP bridge for Claude
+installation:
+  type: desktop_app
+  add_command: git clone https://github.com/mediar-ai/fazm
+  install_command: ./run.sh (macOS 14.0+ requires Xcode)
+  notes: "165 stars, open-source AI agent. Previously Omi. Built with Swift 78.5%, TypeScript 10.1%, Rust 4.6%"
