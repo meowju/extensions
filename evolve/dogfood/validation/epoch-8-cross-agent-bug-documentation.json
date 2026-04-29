@@ -1,0 +1,49 @@
+{
+  "epoch": 8,
+  "capability": "cross-agent-bug-pattern-documentation",
+  "status": "VALIDATED",
+  "tests": [
+    {
+      "name": "Cross-agent bug pattern documentation exists",
+      "result": "PASS",
+      "evidence": "Found: /app/evolve/research/anticipation-magic-moment-2026-04-24.md"
+    },
+    {
+      "name": "Implementation status matrix in promise.md",
+      "result": "PASS",
+      "evidence": "Status matrix found: true"
+    },
+    {
+      "name": "P0 fixes documented (chunking, rate limiting)",
+      "result": "PASS",
+      "evidence": "P0 fixes documented: true"
+    },
+    {
+      "name": "P1 gaps documented (streaming, frame monitoring)",
+      "result": "PASS",
+      "evidence": "P1 gaps documented: true"
+    },
+    {
+      "name": "TokenBuffer class exists",
+      "result": "PASS",
+      "evidence": "TokenBuffer found: true"
+    },
+    {
+      "name": "Code fence awareness in TokenBuffer",
+      "result": "PASS",
+      "evidence": "Code fence awareness found: true"
+    },
+    {
+      "name": "Code fence aware chunking in relay.ts",
+      "result": "PASS",
+      "evidence": "Chunking found: true"
+    },
+    {
+      "name": "Rate limiting in relay.ts",
+      "result": "PASS",
+      "evidence": "Rate limiting found: true"
+    }
+  ],
+  "verdict": "VALIDATED: Bug pattern documented, P0 fixes (chunking, rate limiting) implemented, P1 gaps (streaming) identified. This was primarily a documentation epoch.",
+  "blocking": false
+}

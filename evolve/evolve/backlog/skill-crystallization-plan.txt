@@ -1,0 +1,96 @@
+# PLAN: Skill Self-Crystallization
+
+Priority: P0 - BLOCKING
+Created: 2026-04-25
+Status: READY FOR IMPLEMENTATION
+
+## Goal
+Implement autonomous skill crystallization that captures successful task execution paths and makes them reusable.
+
+## Core Pattern (GenericAgent)
+[Task Complete] --> [Analyze] --> [Generate SOP] --> [Store] --> [Recall]
+
+## Architecture
+~/.meowju/memory/L3-skills/skill-{uuid}.md
+
+## Implementation Phases
+
+### Phase 0: Prerequisites
+- EPOCH 14: Auto-approve learning (approvalCount, dangerous patterns)
+- EPOCH 17: WAITING state in AgentState
+
+### Phase 1: Skill Store
+- src/skills/skill-store.ts
+- CRUD for skills
+- FTS5 search for findSimilar()
+
+### Phase 2: Execution Tracker
+- src/skills/execution-tracker.ts
+- Track tool calls during session
+- startSession(), recordToolCall(), endSession()
+
+### Phase 3: Crystallizer
+- src/skills/skill-crystallizer.ts
+- shouldCrystallize() - checks 3+ tools, success, not duplicate
+- crystallize() - LLM extracts name/trigger, saves skill
+
+### Phase 4: Recaller
+- src/skills/skill-recaller.ts
+- beforeTask() - finds similar skills, returns match + suggestion
+
+### Phase 5: Agent Integration
+- Hooks in lean-agent.ts for:
+  - Tool call tracking
+  - Post-completion crystallization
+  - Pre-task recall
+
+## Test Criteria
+
+### Unit Tests
+- SkillStore.save() / findSimilar()
+- ExecutionTracker lifecycle
+- Crystallizer.shouldCrystallize() / crystallize()
+- Recaller.beforeTask()
+
+### Integration Tests
+- Full flow: session -> skill -> store -> retrieve
+- Recall on similar prompt
+- Usage count increments
+
+### Dogfood Validation
+1. meow "Create react app called test-app"
+2. Complete task (3+ tools)
+3. Verify skill file exists
+4. meow "Make react project named demo"
+5. Verify "I remember" message
+
+## Acceptance Criteria
+- [ ] Skills stored as markdown in L3-skills/
+- [ ] Similar prompts recall skills (confidence > 0.7)
+- [ ] Skill execution increments usageCount
+- [ ] Only 3+ tools + success = crystallized
+- [ ] Skills persist across restarts
+- [ ] Integration tests pass
+
+## File Structure
+agent-kernel/src/skills/
+- mod.ts
+- skill-store.ts
+- skill-crystallizer.ts
+- skill-recaller.ts
+- execution-tracker.ts
+- skill-types.ts
+
+## Dependencies
+- FTS5 (sqlite) for search
+- LLM client for extraction
+- File system for storage
+
+## Blocking Issues
+- EPOCH 14: Auto-approve learning
+- EPOCH 17: WAITING state
+
+## References
+- GenericAgent: https://github.com/lsdefine/GenericAgent
+- agent_loop.py done_hooks system
+- memory/*.sop.md format

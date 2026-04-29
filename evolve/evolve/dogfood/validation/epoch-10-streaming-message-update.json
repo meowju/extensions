@@ -1,0 +1,59 @@
+{
+  "epoch": 10,
+  "capability": "streaming-message-update-integration",
+  "status": "VALIDATED",
+  "tests": [
+    {
+      "name": "RELAY_STREAMING variable declared",
+      "result": "PASS",
+      "evidence": "Found: declared at line with RELAY_STREAMING === \"1\""
+    },
+    {
+      "name": "RELAY_STREAMING used in conditional",
+      "result": "PASS",
+      "evidence": "if (RELAY_STREAMING) pattern found: true"
+    },
+    {
+      "name": "sendStreamingMessage called in main flow",
+      "result": "PASS",
+      "evidence": "sendStreamingMessage called when RELAY_STREAMING: true"
+    },
+    {
+      "name": "Thinking indicator text exists",
+      "result": "PASS",
+      "evidence": "Found: true"
+    },
+    {
+      "name": "Thinking indicator sent as message.reply",
+      "result": "PASS",
+      "evidence": "Thinking sent via message.reply: true"
+    },
+    {
+      "name": "TokenBuffer used in streaming",
+      "result": "PASS",
+      "evidence": "TokenBuffer found: true"
+    },
+    {
+      "name": "codeFenceAware: true option set",
+      "result": "PASS",
+      "evidence": "codeFenceAware option found: true"
+    },
+    {
+      "name": "promptStreaming wrapped in try/catch",
+      "result": "PASS",
+      "evidence": "try/catch around promptStreaming: true"
+    },
+    {
+      "name": "sendStreamingMessage has error rejection",
+      "result": "PASS",
+      "evidence": "Error handling in sendStreamingMessage: true"
+    },
+    {
+      "name": "sendStreamingMessage function defined",
+      "result": "PASS",
+      "evidence": "Function found: true"
+    }
+  ],
+  "verdict": "All implementation criteria met",
+  "blocking": false
+}

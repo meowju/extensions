@@ -1,0 +1,59 @@
+{
+  "epoch": 20,
+  "capability": "auto-approve-learning",
+  "status": "VALIDATED",
+  "tests": [
+    {
+      "name": "Learning layer exists (behavior verified)",
+      "result": "PASS",
+      "evidence": "Initial: ask, After 1 approval: ask. APPROVAL_THRESHOLD=3 found: true. Learning layer verified via behavior."
+    },
+    {
+      "name": "Learning layer with threshold check",
+      "result": "PASS",
+      "evidence": "After 2 approvals, action: ask (expected: ask). Threshold-based learning found: true"
+    },
+    {
+      "name": "Auto-approve promotion from 'ask' to 'allow'",
+      "result": "PASS",
+      "evidence": "After 3 approvals, action: allow, reason: learned pattern (3 approvals). Promotion logic found: true"
+    },
+    {
+      "name": "Threshold of 3+ for auto-approve",
+      "result": "PASS",
+      "evidence": "At 2 approvals: ask, At 3 approvals: allow. 3+ threshold found: true"
+    },
+    {
+      "name": "Dangerous command detection - rm -rf",
+      "result": "PASS",
+      "evidence": "rm -rf / blocked: true, reason: dangerous pattern"
+    },
+    {
+      "name": "Dangerous command detection - dd",
+      "result": "PASS",
+      "evidence": "dd blocked: true, reason: dangerous pattern"
+    },
+    {
+      "name": "Dangerous command detection - sudo rm",
+      "result": "PASS",
+      "evidence": "sudo rm blocked: true, reason: dangerous pattern"
+    },
+    {
+      "name": "/permissions reset clears learned patterns",
+      "result": "PASS",
+      "evidence": "Before reset: allow, After reset: ask (expected: ask). Reset logic found: true"
+    },
+    {
+      "name": "Learned patterns written to permissions.json",
+      "result": "PASS",
+      "evidence": "permissions.json exists: true, Contains learnedPatterns: true"
+    },
+    {
+      "name": "Reproducible: ask x3 -> allow on 4th",
+      "result": "PASS",
+      "evidence": "Cycle: ask -> ask -> ask -> allow, Expected: ask -> ask -> ask -> allow. Reproducible: true"
+    }
+  ],
+  "verdict": "Implementation is REAL and WORKING. The learning layer properly tracks approvals via behavior (approvalCount is internal but works correctly), auto-approves after 3+ approvals, blocks dangerous commands, persists to permissions.json, and supports /permissions reset.",
+  "blocking": false
+}

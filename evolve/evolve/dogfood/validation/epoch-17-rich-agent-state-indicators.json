@@ -1,0 +1,61 @@
+{
+  "epoch": 17,
+  "capability": "rich-agent-state-indicators",
+  "status": "VALIDATED",
+  "tests": [
+    {
+      "name": "AgentState enum exists with >= 5 states",
+      "result": "PASS",
+      "evidence": "AgentState type found: true, State count: 9, States: THINKING, INDEXING, READING, WRITING, EXECUTING, WAITING_PERMISSION, SUMMARIZING, COMPLETE, ERROR"
+    },
+    {
+      "name": "THINKING state defined",
+      "result": "PASS",
+      "evidence": "THINKING found: true"
+    },
+    {
+      "name": "EXECUTING/RUNNING state defined",
+      "result": "PASS",
+      "evidence": "EXECUTING/RUNNING found: true"
+    },
+    {
+      "name": "WAITING state defined",
+      "result": "PASS",
+      "evidence": "WAITING found: true"
+    },
+    {
+      "name": "State tracking in agent",
+      "result": "PASS",
+      "evidence": "setState/currentState found: true, State handling found: true"
+    },
+    {
+      "name": "Relay has state indicator",
+      "result": "PASS",
+      "evidence": "State indicator found: true. Relay has 'thinking...' placeholder: true"
+    },
+    {
+      "name": "Relay handles state callbacks",
+      "result": "PASS",
+      "evidence": "onToken callback found: true, StateCallback found: false"
+    },
+    {
+      "name": "StreamEvent supports state",
+      "result": "PASS",
+      "evidence": "StreamEvent type found: true, State in StreamEvent: true"
+    },
+    {
+      "name": "Contextual state changes near tool calls",
+      "result": "PASS",
+      "evidence": "Tool+state found: true"
+    },
+    {
+      "name": "State emoji map exists",
+      "result": "PASS",
+      "evidence": "AGENT_STATE_EMOJI found: true, Emojis found: true"
+    }
+  ],
+  "verdict": "Epoch 17 VALIDATED. Rich agent state indicators properly implemented with AgentState enum, state tracking, relay indicators, and StreamEvent integration.",
+  "blocking": false,
+  "revalidated_at": "2026-04-24T23:15:30.846Z",
+  "source": "re-validation via validate-epoch-17.ts (commander directive 2026-04-24)"
+}

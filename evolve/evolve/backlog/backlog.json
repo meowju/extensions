@@ -1,0 +1,293 @@
+{
+  "generated": "2026-04-27T00:30:00Z",
+  "sources": [
+    {
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending?since=weekly",
+      "key_repos": [
+        {"name": "obra/superpowers", "stars": 166752, "focus": "Complete SDLC methodology, subagent-driven"},
+        {"name": "anomalyco/opencode", "stars": 148983, "focus": "Open source coding agent"},
+        {"name": "NousResearch/hermes-agent", "stars": 115151, "focus": "Self-improving AI, skill crystallization, FTS5"},
+        {"name": "bytedance/deer-flow", "stars": 63672, "focus": "Super agent harness, hierarchical agents, memory"},
+        {"name": "ruvnet/ruflo", "stars": 33159, "focus": "Multi-agent orchestration, 16 roles, consensus"},
+        {"name": "aaif-goose/goose", "stars": 43172, "focus": "Native AI agent, 15+ providers, Rust"},
+        {"name": "openai/openai-agents-python", "stars": 24990, "focus": "Multi-agent SDK, sandbox agents"},
+        {"name": "ComposioHQ/composio", "stars": 27903, "focus": "1000+ toolkits, tool orchestration"},
+        {"name": "zilliztech/claude-context", "stars": 9000, "focus": "Code search MCP, codebase context"}
+      ]
+    },
+    {
+      "name": "Dogfood Validation",
+      "files": [
+        {"path": "dogfood/epoch-11-compact-session.test.ts", "status": "19 pass, 2 fail"},
+        {"path": "dogfood/epoch-14-permissions-reset.test.ts", "status": "8 pass, 1 error"}
+      ]
+    }
+  ],
+  "priority_matrix": [
+    {
+      "id": "INTERNAL-1",
+      "capability": "epoch-11: Session Compaction Auto-Trigger Fix",
+      "priority": "P0",
+      "source": "Dogfood",
+      "status": "FAIL",
+      "issue": "IV4: MemoryStore.addMessageToThread doesn't show compactThread in regex",
+      "tests": {"pass": 19, "fail": 2}
+    },
+    {
+      "id": "INTERNAL-2",
+      "capability": "epoch-14: beforeEach Import Fix",
+      "priority": "P0",
+      "source": "Dogfood",
+      "status": "ERROR",
+      "issue": "beforeEach not defined at line 34",
+      "tests": {"pass": 8, "error": 1}
+    },
+    {
+      "id": "P0-1",
+      "capability": "Skill Self-Crystallization",
+      "priority": "P0",
+      "source": "GenericAgent",
+      "status": "DISCOVERED",
+      "reference": "evolve/backlog/skill-self-crystallization.md",
+      "stars": "competitor has, meow doesn't"
+    },
+    {
+      "id": "P0-2",
+      "capability": "Context Sandboxing",
+      "priority": "P0",
+      "source": "context-mode",
+      "status": "DISCOVERED",
+      "reference": "evolve/backlog/context-mode-98-percent-reduction.md",
+      "benefit": "98% context reduction"
+    },
+    {
+      "id": "P1-1",
+      "capability": "Multi-Agent Orchestration",
+      "priority": "P1",
+      "source": "deer-flow + ruflo",
+      "status": "PROPOSED",
+      "reference": "evolve/backlog/multi-agent-coordination.md",
+      "stars": 97000,
+      "combined": true
+    },
+    {
+      "id": "P1-2",
+      "capability": "Complete SDLC Workflow",
+      "priority": "P1",
+      "source": "superpowers",
+      "status": "DOCUMENTED",
+      "reference": "evolve/backlog/skill-workflow-methodology.md",
+      "stars": 166752
+    },
+    {
+      "id": "P1-3",
+      "capability": "Tool Orchestration",
+      "priority": "P1",
+      "source": "Composio",
+      "status": "PATTERN",
+      "stars": 27903
+    },
+    {
+      "id": "P2-1",
+      "capability": "Subagent Dispatch",
+      "priority": "P2",
+      "source": "superpowers",
+      "status": "PROPOSED",
+      "pattern": "Two-stage review (spec + quality)"
+    },
+    {
+      "id": "P2-2",
+      "capability": "TDD Workflow Enforcement",
+      "priority": "P2",
+      "source": "superpowers",
+      "status": "PROPOSED",
+      "pattern": "RED-GREEN-REFACTOR enforcement"
+    }
+  ],
+  "internal_gaps": [
+    {
+      "id": "INTERNAL-1",
+      "title": "epoch-11: Session Compaction Fix",
+      "priority": "P0",
+      "location": "src/core/memory.ts",
+      "test_file": "dogfood/epoch-11-compact-session.test.ts",
+      "issue": "MemoryStore.addMessageToThread method body not showing compactThread call in regex",
+      "current_state": "19 pass, 2 fail",
+      "fix_required": "Ensure compactThread is called when needsCompaction returns true",
+      "root_cause": "Regex in IV4 test doesn't match the method structure correctly"
+    },
+    {
+      "id": "INTERNAL-2",
+      "title": "epoch-14: Learning Layer Test Design",
+      "priority": "P1",
+      "location": "agent-kernel/src/sidecars/permissions.ts",
+      "test_file": "dogfood/epoch-14-permissions-reset.test.ts",
+      "issue": "Learning layer tests T4.2 and T5.2 fail because default rules already allow echo commands",
+      "current_state": "23 pass, 2 fail",
+      "fix_required": "Test design issue - shell commands like 'echo' match default allow rules",
+      "root_cause": "Tests use 'echo' commands which match DEFAULT_RULES['cmd:echo '] = allow. Learning layer correctly returns 'ask' for non-learned commands, but default rules take precedence."
+    }
+  ],
+  "external_capabilities": [
+    {
+      "id": "P0-1",
+      "name": "Skill Self-Crystallization",
+      "priority": "P0",
+      "blocking": true,
+      "source_repo": "NousResearch/hermes-agent",
+      "source_stars": 115151,
+      "reference_file": "evolve/backlog/skill-self-crystallization.md",
+      "key_patterns": [
+        "done_hooks after successful task completion",
+        "Tool call array capture for SOP generation",
+        "SOP format: Trigger, Context, Steps, Verification",
+        "FTS5 skill tree for retrieval",
+        "Skills self-improve during use"
+      ],
+      "implementation_phases": [
+        {"phase": 1, "name": "Hook Infrastructure", "target": "src/core/done-hooks.ts"},
+        {"phase": 2, "name": "FTS5 Skill Index", "target": ".claude/skills/skill-tree/"},
+        {"phase": 3, "name": "Skill Improvement Loop", "target": "Skill comparison and update"},
+        {"phase": 4, "name": "Self-Bootstrap", "target": "Agent uses skill tree for planning"}
+      ]
+    },
+    {
+      "id": "P0-2",
+      "name": "Context Sandboxing",
+      "priority": "P0",
+      "blocking": true,
+      "source_repo": "mksglu/context-mode",
+      "reference_file": "evolve/backlog/context-mode-98-percent-reduction.md",
+      "benefit": "315KB → 5.4KB (98% reduction)",
+      "key_patterns": [
+        "Tool output captured and summarized",
+        "Original output replaced with reference",
+        "FTS5 index points to compacted content",
+        "--continue restores exact state"
+      ]
+    },
+    {
+      "id": "P0-3",
+      "name": "Sandbox Execution",
+      "priority": "P0",
+      "blocking": false,
+      "source_repo": "openai/openai-agents-python",
+      "source_stars": 24990,
+      "reference_file": "evolve/backlog/sandbox-execution.md",
+      "key_patterns": [
+        "SandboxAgent with manifest-based initialization",
+        "Sandbox clients: UnixLocal, Docker, Remote",
+        "State snapshot and restore",
+        "Isolation: filesystem, network, process"
+      ],
+      "implementation_phases": [
+        {"phase": 1, "name": "Local Sandbox", "target": "src/sandbox/local-sandbox.ts"},
+        {"phase": 2, "name": "Docker Sandbox", "target": "src/sandbox/docker-sandbox.ts"},
+        {"phase": 3, "name": "Sandbox Agent", "target": "src/sandbox/sandbox-agent.ts"}
+      ]
+    },
+    {
+      "id": "P1-1",
+      "name": "Multi-Agent Orchestration",
+      "priority": "P1",
+      "source_repos": [
+        {"name": "bytedance/deer-flow", "stars": 63672},
+        {"name": "ruvnet/ruflo", "stars": 33159}
+      ],
+      "reference_file": "evolve/backlog/multi-agent-coordination.md",
+      "combined_stars": 97000,
+      "key_patterns_from_deer_flow": [
+        "Supervisor delegates to specialized agents",
+        "Shared context store (not message passing)",
+        "Hierarchical roles: Research, Coding, Review, Memory",
+        "Interruptible execution for user interjection"
+      ],
+      "key_patterns_from_ruflo": [
+        "16 specialized agent roles",
+        "Swarm topologies: mesh, hier, ring, star",
+        "Consensus: Raft/BFT/Gossip",
+        "Learning loop with Q-Learning router"
+      ]
+    },
+    {
+      "id": "P1-2",
+      "name": "Complete SDLC Workflow",
+      "priority": "P1",
+      "source_repo": {"name": "obra/superpowers", "stars": 166752},
+      "reference_file": "evolve/backlog/skill-workflow-methodology.md",
+      "workflow": ["brainstorm", "design", "plan", "execute", "review", "finish"],
+      "key_patterns": [
+        "Subagent-driven with two-stage review",
+        "RED-GREEN-REFACTOR enforcement",
+        "Auto-triggers before any code writing"
+      ]
+    },
+    {
+      "id": "P1-3",
+      "name": "Tool Orchestration",
+      "priority": "P1",
+      "source_repo": {"name": "ComposioHQ/composio", "stars": 27903},
+      "key_patterns": [
+        "1000+ toolkits",
+        "Tool search and context management",
+        "Cursor/Windsurf use similar patterns"
+      ]
+    }
+  ],
+  "competitor_gap_matrix": {
+    "capabilities": [
+      {"name": "Complete SDLC", "superpowers": true, "deer_flow": "partial", "ruflo": false, "meow": false},
+      {"name": "Multi-Agent", "superpowers": false, "deer_flow": true, "ruflo": true, "meow": false},
+      {"name": "Skill Self-Crystal", "superpowers": false, "deer_flow": false, "ruflo": false, "meow": false},
+      {"name": "Context Sandbox", "superpowers": false, "deer_flow": true, "ruflo": false, "meow": false},
+      {"name": "Tool Orchestration", "superpowers": false, "deer_flow": "partial", "ruflo": false, "meow": "partial"},
+      {"name": "Subagent Dispatch", "superpowers": true, "deer_flow": true, "ruflo": false, "meow": false},
+      {"name": "TDD Workflow", "superpowers": true, "deer_flow": false, "ruflo": false, "meow": false}
+    ]
+  },
+  "action_items": {
+    "immediate": [
+      {"id": "INTERNAL-1", "action": "Fix epoch-11 IV4 test or implementation", "priority": "P0"},
+      {"id": "INTERNAL-2", "action": "Fix epoch-14 beforeEach import", "priority": "P0"}
+    ],
+    "short_term": [
+      {"id": "P0-1", "action": "Implement Skill Self-Crystallization", "priority": "P0"},
+      {"id": "P0-2", "action": "Implement Context Sandboxing", "priority": "P0"}
+    ],
+    "medium_term": [
+      {"id": "P1-1", "action": "Design Multi-Agent Supervisor", "priority": "P1"},
+      {"id": "P1-2", "action": "Implement Complete SDLC Workflow", "priority": "P1"}
+    ]
+  },
+  "backlog_files": [
+    {"path": "evolve/backlog/skill-self-crystallization.md", "priority": "P0"},
+    {"path": "evolve/backlog/context-mode-98-percent-reduction.md", "priority": "P0"},
+    {"path": "evolve/backlog/multi-agent-coordination.md", "priority": "P1"},
+    {"path": "evolve/backlog/skill-workflow-methodology.md", "priority": "P1"},
+    {"path": "evolve/backlog/context-sandboxing.md", "priority": "P0"},
+    {"path": "evolve/backlog/github_trending_inventory.md", "priority": "Research"},
+    {"path": "evolve/backlog/SUMMARY.md", "priority": "Overview"}
+  ],
+  "test_results": {
+    "epoch-11": {
+      "file": "dogfood/epoch-11-compact-session.test.ts",
+      "pass": 19,
+      "fail": 2,
+      "failing_tests": ["IV4: auto-trigger detection", "T2.2: summarize old messages"]
+    },
+    "epoch-14": {
+      "file": "dogfood/epoch-14-permissions-reset.test.ts",
+      "pass": 20,
+      "fail": 5,
+      "fixed": "beforeEach import fixed",
+      "remaining_fails": [
+        "T2.1: First approval promotes to allow (should NOT)",
+        "T2.2: Second approval promotes to allow (should NOT)",
+        "T4.2: Cleared patterns no longer auto-approve",
+        "T5.2: Different commands share approval count",
+        "T6.1: Dangerous patterns not blocked"
+      ]
+    }
+  }
+}

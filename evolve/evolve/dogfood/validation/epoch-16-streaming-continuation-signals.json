@@ -1,0 +1,99 @@
+{
+  "epoch": 16,
+  "capability": "streaming-continuation-signals",
+  "status": "VALIDATED",
+  "tests": [
+    {
+      "name": "StreamEvent type includes needsContinuation",
+      "result": "PASS",
+      "evidence": "needsContinuation field found: true"
+    },
+    {
+      "name": "StreamEventType includes needsContinuation event type",
+      "result": "PASS",
+      "evidence": "needsContinuation type found: true"
+    },
+    {
+      "name": "content_block_stop events emitted",
+      "result": "PASS",
+      "evidence": "Found 13 content_block_stop occurrences"
+    },
+    {
+      "name": "message_stop events emitted",
+      "result": "PASS",
+      "evidence": "Found 13 message_stop occurrences"
+    },
+    {
+      "name": "Abort signal check exists",
+      "result": "PASS",
+      "evidence": "abortSignal?.aborted check found: true"
+    },
+    {
+      "name": "Abort path emits content_block_stop",
+      "result": "PASS",
+      "evidence": "Abort path emits termination: true"
+    },
+    {
+      "name": "Abort path emits message_stop",
+      "result": "PASS",
+      "evidence": "Abort path emits message_stop: true"
+    },
+    {
+      "name": "needsContinuation flag set to true",
+      "result": "PASS",
+      "evidence": "needsContinuation = true found: true"
+    },
+    {
+      "name": "needsContinuation emitted in event",
+      "result": "PASS",
+      "evidence": "needsContinuation emitted: true"
+    },
+    {
+      "name": "Max iterations check exists",
+      "result": "PASS",
+      "evidence": "Max iterations path found: true"
+    },
+    {
+      "name": "highWaterMark option in StreamBufferOptions",
+      "result": "PASS",
+      "evidence": "highWaterMark found: true"
+    },
+    {
+      "name": "writeQueue for backpressure queue",
+      "result": "PASS",
+      "evidence": "writeQueue found: true"
+    },
+    {
+      "name": "drain() method for backpressure handling",
+      "result": "PASS",
+      "evidence": "drain() method found: true"
+    },
+    {
+      "name": "isBackpressure() monitoring method",
+      "result": "PASS",
+      "evidence": "isBackpressure() found: true"
+    },
+    {
+      "name": "getQueueDepth() for monitoring",
+      "result": "PASS",
+      "evidence": "getQueueDepth() found: true"
+    },
+    {
+      "name": "TokenBuffer class is exported",
+      "result": "PASS",
+      "evidence": "export class TokenBuffer found: true"
+    },
+    {
+      "name": "StreamEventType type is exported",
+      "result": "PASS",
+      "evidence": "export type StreamEventType found: true"
+    },
+    {
+      "name": "StreamEvent interface is exported",
+      "result": "PASS",
+      "evidence": "export interface StreamEvent found: true"
+    }
+  ],
+  "verdict": "All implementation criteria met: needsContinuation field exists, stream termination events (content_block_stop, message_stop) are emitted, graceful abort handling is in place, and backpressure handling with highWaterMark, writeQueue, and drain() method is implemented.",
+  "blocking": false
+}

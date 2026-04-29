@@ -1,0 +1,61 @@
+{
+  "epoch": 21,
+  "capability": "permission-learning-integration",
+  "status": "VALIDATED",
+  "tests": [
+    {
+      "name": "Dangerous patterns denied first",
+      "result": "PASS",
+      "evidence": "Action: deny, Reason: dangerous pattern"
+    },
+    {
+      "name": "No default rule → ask",
+      "result": "PASS",
+      "evidence": "Action: ask, Reason: undefined"
+    },
+    {
+      "name": "Approval count increments",
+      "result": "PASS",
+      "evidence": "Count: 1"
+    },
+    {
+      "name": "Not auto-approved at 1 approval",
+      "result": "PASS",
+      "evidence": "Action: ask"
+    },
+    {
+      "name": "Not auto-approved at 2 approvals",
+      "result": "PASS",
+      "evidence": "Action: ask"
+    },
+    {
+      "name": "Auto-approved at 3 approvals",
+      "result": "PASS",
+      "evidence": "Action: allow, Reason: learned pattern (3 approvals)"
+    },
+    {
+      "name": "4th run auto-approves (reproducible)",
+      "result": "PASS",
+      "evidence": "Action: allow, Reason: learned pattern (3 approvals)"
+    },
+    {
+      "name": "Integration function returns correct result",
+      "result": "PASS",
+      "evidence": "Action: allow, Reason: echo is safe"
+    }
+  ],
+  "verdict": "EPOCH 21 VALIDATED: checkPermissionWithLearning() is now properly wired into executeTool() in tool-registry.ts. The auto-approve learning layer is fully integrated into the main permission check flow. After 3 approvals, commands auto-approve. The ask→ask→ask→allow cycle is verified. The /permissions check command now shows learning status.",
+  "blocking": false,
+  "integration_points": [
+    {
+      "file": "/app/agent-kernel/src/sidecars/tool-registry.ts",
+      "lines": "480-510",
+      "change": "Replaced checkPermission with checkPermissionWithLearning, added recordApproval() calls after user grants permission"
+    },
+    {
+      "file": "/app/agent-kernel/src/skills/permissions.ts",
+      "lines": "11,18,19,87-109",
+      "change": "Updated handleCheck to use checkPermissionWithLearning and display learning status"
+    }
+  ]
+}

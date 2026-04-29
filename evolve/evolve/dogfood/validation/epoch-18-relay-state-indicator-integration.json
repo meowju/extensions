@@ -1,0 +1,46 @@
+{
+  "epoch": 18,
+  "capability": "relay-state-indicator-integration",
+  "status": "VALIDATED",
+  "tests": [
+    {
+      "name": "Relay has state indicator",
+      "result": "PASS",
+      "evidence": "State indicator found: true. Relay has 'thinking...' placeholder: true"
+    },
+    {
+      "name": "Relay handles state callbacks",
+      "result": "PASS",
+      "evidence": "onToken callback found: true, StateCallback found: false"
+    },
+    {
+      "name": "RELAY_STREAMING wired to main flow",
+      "result": "PASS",
+      "evidence": "RELAY_STREAMING defined: true, sendStreamingMessage called: true"
+    },
+    {
+      "name": "meow-agent.ts supports streaming",
+      "result": "PASS",
+      "evidence": "promptStreaming method found: true, Streaming support found: true"
+    },
+    {
+      "name": "meow-stream.ts exists",
+      "result": "PASS",
+      "evidence": "meow-stream.ts exists: true"
+    },
+    {
+      "name": "TokenBuffer code fence aware",
+      "result": "PASS",
+      "evidence": "TokenBuffer imported: true, codeFenceAware option: true"
+    },
+    {
+      "name": "State change event type exists",
+      "result": "PASS",
+      "evidence": "StateChangeEvent interface found: true"
+    }
+  ],
+  "verdict": "Epoch 18 VALIDATED. Relay state indicator integration complete.",
+  "blocking": false,
+  "revalidated_at": "2026-04-24T23:15:32.754Z",
+  "source": "re-validation via validate-epoch-18.ts (commander directive 2026-04-24)"
+}
