@@ -1,0 +1,20 @@
+{
+  "913957031650656288": {
+    "id": "913957031650656288",
+    "name": "stancsz",
+    "relationships": [],
+    "goals": [],
+    "motivations": [],
+    "preferences": {
+      "tone": "balanced",
+      "communicationStyle": "balanced",
+      "interests": [],
+      "topicsToAvoid": []
+    },
+    "facts": [],
+    "contextThreads": [],
+    "lastSeen": 1777400318019,
+    "firstSeen": 1776688358212,
+    "interactionCount": 70
+  }
+}

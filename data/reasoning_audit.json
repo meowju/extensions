@@ -1,0 +1,6916 @@
+{
+  "traces": [
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777263533807,
+      "endTime": 1777263533907,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777263533907
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777263533810,
+      "endTime": 1777263533910,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777263533910
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777263533917,
+      "endTime": 1777263533917,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777263533917
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777263533925,
+      "endTime": 1777263533925,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777263533925
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777263533934,
+      "endTime": 1777263533934,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777263533934
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777263533943,
+      "endTime": 1777263533943,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777263533943
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777263533952,
+      "endTime": 1777263533952,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777263533952
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777263533965,
+      "endTime": 1777263533965,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777263533965
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777263533974,
+      "endTime": 1777263533974,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777263533974
+    },
+    {
+      "id": "trace_1777263533985_rdlcehpu",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777263533884,
+      "endTime": 1777263533984,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777263533985
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777264067133,
+      "endTime": 1777264067233,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777264067233
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777264067136,
+      "endTime": 1777264067236,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777264067236
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777264067247,
+      "endTime": 1777264067247,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264067247
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777264067255,
+      "endTime": 1777264067255,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264067255
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777264067262,
+      "endTime": 1777264067262,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264067262
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777264067271,
+      "endTime": 1777264067271,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264067271
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777264067279,
+      "endTime": 1777264067279,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264067279
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777264067294,
+      "endTime": 1777264067294,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777264067294
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777264067305,
+      "endTime": 1777264067305,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777264067305
+    },
+    {
+      "id": "trace_1777264067315_f507rk07",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777264067215,
+      "endTime": 1777264067315,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777264067315
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777264826860,
+      "endTime": 1777264826960,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777264826960
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777264826865,
+      "endTime": 1777264826965,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777264826965
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777264826974,
+      "endTime": 1777264826974,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264826974
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777264826983,
+      "endTime": 1777264826983,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264826983
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777264826991,
+      "endTime": 1777264826991,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264826991
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777264827001,
+      "endTime": 1777264827001,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264827001
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777264827009,
+      "endTime": 1777264827009,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264827009
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777264827028,
+      "endTime": 1777264827028,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777264827028
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777264827040,
+      "endTime": 1777264827040,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777264827040
+    },
+    {
+      "id": "trace_1777264827052_0dox8ygv",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777264826952,
+      "endTime": 1777264827052,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777264827052
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777264980344,
+      "endTime": 1777264980444,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777264980444
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777264980349,
+      "endTime": 1777264980449,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777264980449
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777264980461,
+      "endTime": 1777264980461,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264980461
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777264980471,
+      "endTime": 1777264980471,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264980471
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777264980481,
+      "endTime": 1777264980481,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264980481
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777264980491,
+      "endTime": 1777264980491,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264980491
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777264980502,
+      "endTime": 1777264980502,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777264980502
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777264980524,
+      "endTime": 1777264980524,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777264980524
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777264980536,
+      "endTime": 1777264980536,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777264980536
+    },
+    {
+      "id": "trace_1777264980548_rywm7oho",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777264980448,
+      "endTime": 1777264980548,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777264980548
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777265115502,
+      "endTime": 1777265115602,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777265115602
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777265115507,
+      "endTime": 1777265115607,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777265115607
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777265115617,
+      "endTime": 1777265115617,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265115617
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777265115626,
+      "endTime": 1777265115626,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265115626
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777265115634,
+      "endTime": 1777265115634,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265115634
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777265115643,
+      "endTime": 1777265115643,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265115643
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777265115652,
+      "endTime": 1777265115652,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265115652
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777265115670,
+      "endTime": 1777265115670,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777265115670
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777265115684,
+      "endTime": 1777265115684,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777265115684
+    },
+    {
+      "id": "trace_1777265115696_ehxmxt2e",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777265115596,
+      "endTime": 1777265115696,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777265115696
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777265233628,
+      "endTime": 1777265233728,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777265233728
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777265233632,
+      "endTime": 1777265233732,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777265233732
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777265233743,
+      "endTime": 1777265233743,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265233743
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777265233755,
+      "endTime": 1777265233755,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265233755
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777265233767,
+      "endTime": 1777265233767,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265233767
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777265233775,
+      "endTime": 1777265233775,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265233775
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777265233786,
+      "endTime": 1777265233786,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265233786
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777265233806,
+      "endTime": 1777265233806,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777265233806
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777265233819,
+      "endTime": 1777265233819,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777265233819
+    },
+    {
+      "id": "trace_1777265233833_h7vl2gw6",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777265233733,
+      "endTime": 1777265233833,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777265233833
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777265509038,
+      "endTime": 1777265509138,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777265509138
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777265509043,
+      "endTime": 1777265509143,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777265509143
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777265509154,
+      "endTime": 1777265509154,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265509154
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777265509164,
+      "endTime": 1777265509164,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265509164
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777265509173,
+      "endTime": 1777265509173,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265509173
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777265509183,
+      "endTime": 1777265509183,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265509183
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777265509192,
+      "endTime": 1777265509192,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265509192
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777265509211,
+      "endTime": 1777265509211,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777265509211
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777265509225,
+      "endTime": 1777265509225,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777265509225
+    },
+    {
+      "id": "trace_1777265509237_nsd6qbx7",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777265509137,
+      "endTime": 1777265509237,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777265509237
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777265737969,
+      "endTime": 1777265738069,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777265738069
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777265737974,
+      "endTime": 1777265738074,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777265738074
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777265738085,
+      "endTime": 1777265738085,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265738085
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777265738095,
+      "endTime": 1777265738095,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265738095
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777265738104,
+      "endTime": 1777265738104,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265738104
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777265738113,
+      "endTime": 1777265738113,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265738113
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777265738123,
+      "endTime": 1777265738123,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265738123
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777265738143,
+      "endTime": 1777265738143,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777265738143
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777265738156,
+      "endTime": 1777265738156,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777265738156
+    },
+    {
+      "id": "trace_1777265738171_38hfgzpd",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777265738071,
+      "endTime": 1777265738171,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777265738171
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777265811326,
+      "endTime": 1777265811426,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777265811426
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777265811330,
+      "endTime": 1777265811430,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777265811430
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777265811442,
+      "endTime": 1777265811442,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265811442
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777265811453,
+      "endTime": 1777265811453,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265811453
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777265811463,
+      "endTime": 1777265811463,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265811463
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777265811474,
+      "endTime": 1777265811474,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265811474
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777265811484,
+      "endTime": 1777265811484,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265811484
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777265811503,
+      "endTime": 1777265811503,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777265811503
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777265811516,
+      "endTime": 1777265811516,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777265811516
+    },
+    {
+      "id": "trace_1777265811528_f29ff9f8",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777265811428,
+      "endTime": 1777265811528,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777265811528
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777265962666,
+      "endTime": 1777265962766,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777265962766
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777265962671,
+      "endTime": 1777265962771,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777265962771
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777265962784,
+      "endTime": 1777265962784,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265962784
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777265962795,
+      "endTime": 1777265962795,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265962795
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777265962807,
+      "endTime": 1777265962807,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265962807
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777265962820,
+      "endTime": 1777265962820,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265962820
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777265962832,
+      "endTime": 1777265962832,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777265962832
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777265962854,
+      "endTime": 1777265962854,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777265962854
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777265962867,
+      "endTime": 1777265962867,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777265962867
+    },
+    {
+      "id": "trace_1777265962879_knoyor5f",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777265962779,
+      "endTime": 1777265962879,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777265962879
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777266344279,
+      "endTime": 1777266344379,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777266344379
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777266344284,
+      "endTime": 1777266344384,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777266344384
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777266344395,
+      "endTime": 1777266344395,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266344395
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777266344407,
+      "endTime": 1777266344407,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266344407
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777266344419,
+      "endTime": 1777266344419,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266344419
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777266344429,
+      "endTime": 1777266344429,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266344429
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777266344440,
+      "endTime": 1777266344440,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266344440
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777266344459,
+      "endTime": 1777266344459,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777266344459
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777266344474,
+      "endTime": 1777266344474,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777266344474
+    },
+    {
+      "id": "trace_1777266344487_oobbiean",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777266344387,
+      "endTime": 1777266344487,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777266344487
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777266628514,
+      "endTime": 1777266628614,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777266628614
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777266628519,
+      "endTime": 1777266628619,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777266628619
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777266628631,
+      "endTime": 1777266628631,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266628631
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777266628641,
+      "endTime": 1777266628641,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266628641
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777266628651,
+      "endTime": 1777266628651,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266628651
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777266628661,
+      "endTime": 1777266628661,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266628661
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777266628673,
+      "endTime": 1777266628673,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777266628673
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777266628694,
+      "endTime": 1777266628695,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777266628695
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777266628708,
+      "endTime": 1777266628708,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777266628708
+    },
+    {
+      "id": "trace_1777266628723_pn31wprm",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777266628622,
+      "endTime": 1777266628722,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777266628723
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777267859650,
+      "endTime": 1777267859750,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777267859750
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777267859654,
+      "endTime": 1777267859754,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777267859754
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777267859767,
+      "endTime": 1777267859767,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777267859767
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777267859777,
+      "endTime": 1777267859777,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777267859777
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777267859787,
+      "endTime": 1777267859787,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777267859787
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777267859802,
+      "endTime": 1777267859802,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777267859802
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777267859812,
+      "endTime": 1777267859812,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777267859812
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777267859834,
+      "endTime": 1777267859834,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777267859834
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777267859850,
+      "endTime": 1777267859850,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777267859850
+    },
+    {
+      "id": "trace_1777267859864_28ynjsmh",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777267859764,
+      "endTime": 1777267859864,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777267859864
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777268630112,
+      "endTime": 1777268630212,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777268630212
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777268630116,
+      "endTime": 1777268630216,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777268630216
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777268630229,
+      "endTime": 1777268630229,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268630229
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777268630240,
+      "endTime": 1777268630240,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268630240
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777268630250,
+      "endTime": 1777268630250,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268630250
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777268630263,
+      "endTime": 1777268630263,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268630263
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777268630275,
+      "endTime": 1777268630275,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268630275
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777268630295,
+      "endTime": 1777268630295,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777268630295
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777268630307,
+      "endTime": 1777268630307,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777268630307
+    },
+    {
+      "id": "trace_1777268630321_rft7ohtv",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777268630221,
+      "endTime": 1777268630321,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777268630321
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777268832309,
+      "endTime": 1777268832409,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777268832409
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777268832314,
+      "endTime": 1777268832414,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777268832414
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777268832425,
+      "endTime": 1777268832425,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268832425
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777268832435,
+      "endTime": 1777268832435,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268832435
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777268832446,
+      "endTime": 1777268832446,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268832446
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777268832457,
+      "endTime": 1777268832457,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268832457
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777268832471,
+      "endTime": 1777268832471,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268832471
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777268832494,
+      "endTime": 1777268832494,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777268832494
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777268832507,
+      "endTime": 1777268832507,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777268832507
+    },
+    {
+      "id": "trace_1777268832522_2jnjaev6",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777268832422,
+      "endTime": 1777268832522,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777268832522
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777268841766,
+      "endTime": 1777268841866,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777268841866
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777268841770,
+      "endTime": 1777268841870,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777268841870
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777268841883,
+      "endTime": 1777268841883,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268841883
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777268841894,
+      "endTime": 1777268841894,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268841894
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777268841906,
+      "endTime": 1777268841906,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268841906
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777268841917,
+      "endTime": 1777268841917,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268841917
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777268841929,
+      "endTime": 1777268841929,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777268841929
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777268841953,
+      "endTime": 1777268841953,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777268841953
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777268841968,
+      "endTime": 1777268841968,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777268841968
+    },
+    {
+      "id": "trace_1777268841983_v8orexuu",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777268841883,
+      "endTime": 1777268841983,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777268841983
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777269038181,
+      "endTime": 1777269038281,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777269038281
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777269038189,
+      "endTime": 1777269038289,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777269038289
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777269038307,
+      "endTime": 1777269038307,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269038307
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777269038322,
+      "endTime": 1777269038322,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269038322
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777269038336,
+      "endTime": 1777269038336,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269038336
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777269038349,
+      "endTime": 1777269038349,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269038349
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777269038364,
+      "endTime": 1777269038364,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269038364
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777269038392,
+      "endTime": 1777269038392,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777269038392
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777269038409,
+      "endTime": 1777269038409,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777269038409
+    },
+    {
+      "id": "trace_1777269038427_idf5nq50",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777269038327,
+      "endTime": 1777269038427,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777269038427
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777269051802,
+      "endTime": 1777269051902,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777269051902
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777269051809,
+      "endTime": 1777269051909,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777269051909
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777269051926,
+      "endTime": 1777269051926,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269051926
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777269051941,
+      "endTime": 1777269051941,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269051941
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777269051954,
+      "endTime": 1777269051954,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269051954
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777269051968,
+      "endTime": 1777269051968,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269051968
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777269051983,
+      "endTime": 1777269051983,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269051983
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777269052009,
+      "endTime": 1777269052009,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777269052009
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777269052027,
+      "endTime": 1777269052027,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777269052027
+    },
+    {
+      "id": "trace_1777269052050_a0j88t95",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777269051949,
+      "endTime": 1777269052049,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777269052050
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777269298093,
+      "endTime": 1777269298193,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777269298193
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777269298099,
+      "endTime": 1777269298199,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777269298199
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777269298216,
+      "endTime": 1777269298216,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269298216
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777269298230,
+      "endTime": 1777269298230,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269298230
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777269298243,
+      "endTime": 1777269298243,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269298243
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777269298255,
+      "endTime": 1777269298255,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269298255
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777269298269,
+      "endTime": 1777269298269,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269298269
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777269298299,
+      "endTime": 1777269298299,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777269298299
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777269298314,
+      "endTime": 1777269298314,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777269298314
+    },
+    {
+      "id": "trace_1777269298330_1yznjrj6",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777269298230,
+      "endTime": 1777269298330,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777269298330
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777269451534,
+      "endTime": 1777269451634,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777269451634
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777269451540,
+      "endTime": 1777269451640,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777269451640
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777269451654,
+      "endTime": 1777269451654,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269451654
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777269451667,
+      "endTime": 1777269451667,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269451667
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777269451682,
+      "endTime": 1777269451682,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269451682
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777269451699,
+      "endTime": 1777269451699,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269451699
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777269451715,
+      "endTime": 1777269451715,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269451715
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777269451741,
+      "endTime": 1777269451741,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777269451741
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777269451760,
+      "endTime": 1777269451760,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777269451760
+    },
+    {
+      "id": "trace_1777269451777_pam0jhbt",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777269451677,
+      "endTime": 1777269451777,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777269451777
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777269514832,
+      "endTime": 1777269514932,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777269514932
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777269514839,
+      "endTime": 1777269514939,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777269514939
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777269514954,
+      "endTime": 1777269514954,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269514954
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777269514969,
+      "endTime": 1777269514969,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269514969
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777269514983,
+      "endTime": 1777269514983,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269514983
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777269514996,
+      "endTime": 1777269514996,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269514996
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777269515010,
+      "endTime": 1777269515010,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269515010
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777269515036,
+      "endTime": 1777269515036,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777269515036
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777269515052,
+      "endTime": 1777269515052,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777269515052
+    },
+    {
+      "id": "trace_1777269515071_q5tlvavj",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777269514970,
+      "endTime": 1777269515070,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777269515071
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777269834371,
+      "endTime": 1777269834471,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777269834471
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777269834379,
+      "endTime": 1777269834479,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777269834479
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777269834496,
+      "endTime": 1777269834496,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269834496
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777269834510,
+      "endTime": 1777269834510,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269834510
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777269834523,
+      "endTime": 1777269834523,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269834523
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777269834537,
+      "endTime": 1777269834537,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269834537
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777269834550,
+      "endTime": 1777269834550,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269834550
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777269834577,
+      "endTime": 1777269834577,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777269834577
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777269834593,
+      "endTime": 1777269834593,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777269834593
+    },
+    {
+      "id": "trace_1777269834610_l5lvamqj",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777269834510,
+      "endTime": 1777269834610,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777269834611
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777269834872,
+      "endTime": 1777269834972,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777269834972
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777269834879,
+      "endTime": 1777269834979,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777269834979
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777269834992,
+      "endTime": 1777269834992,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269834992
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777269835006,
+      "endTime": 1777269835006,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269835006
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777269835021,
+      "endTime": 1777269835021,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269835021
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777269835035,
+      "endTime": 1777269835035,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269835035
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777269835048,
+      "endTime": 1777269835048,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777269835048
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777269835080,
+      "endTime": 1777269835080,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777269835080
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777269835098,
+      "endTime": 1777269835098,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777269835098
+    },
+    {
+      "id": "trace_1777269835116_wrvktfsm",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777269835016,
+      "endTime": 1777269835116,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777269835116
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777270190235,
+      "endTime": 1777270190335,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777270190335
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777270190244,
+      "endTime": 1777270190344,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777270190344
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777270190361,
+      "endTime": 1777270190361,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270190361
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777270190376,
+      "endTime": 1777270190376,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270190376
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777270190394,
+      "endTime": 1777270190394,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270190394
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777270190410,
+      "endTime": 1777270190410,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270190410
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777270190425,
+      "endTime": 1777270190425,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270190425
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777270190452,
+      "endTime": 1777270190452,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777270190452
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777270190470,
+      "endTime": 1777270190470,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777270190470
+    },
+    {
+      "id": "trace_1777270190490_i9ftl7vv",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777270190390,
+      "endTime": 1777270190490,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777270190491
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777270318246,
+      "endTime": 1777270318346,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777270318346
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777270318254,
+      "endTime": 1777270318354,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777270318354
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777270318370,
+      "endTime": 1777270318370,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270318370
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777270318386,
+      "endTime": 1777270318386,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270318386
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777270318403,
+      "endTime": 1777270318403,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270318403
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777270318418,
+      "endTime": 1777270318418,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270318418
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777270318433,
+      "endTime": 1777270318433,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270318433
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777270318459,
+      "endTime": 1777270318459,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777270318459
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777270318475,
+      "endTime": 1777270318475,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777270318475
+    },
+    {
+      "id": "trace_1777270318495_3hb9hjna",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777270318395,
+      "endTime": 1777270318495,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777270318495
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777270847151,
+      "endTime": 1777270847251,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777270847251
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777270847159,
+      "endTime": 1777270847259,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777270847259
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777270847275,
+      "endTime": 1777270847275,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270847275
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777270847291,
+      "endTime": 1777270847291,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270847291
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777270847304,
+      "endTime": 1777270847304,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270847304
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777270847318,
+      "endTime": 1777270847318,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270847318
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777270847331,
+      "endTime": 1777270847331,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777270847331
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777270847360,
+      "endTime": 1777270847360,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777270847360
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777270847382,
+      "endTime": 1777270847382,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777270847382
+    },
+    {
+      "id": "trace_1777270847404_urwzwnxc",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777270847303,
+      "endTime": 1777270847403,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777270847404
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777272053550,
+      "endTime": 1777272053650,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777272053650
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777272053557,
+      "endTime": 1777272053657,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777272053657
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777272053673,
+      "endTime": 1777272053673,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272053673
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777272053687,
+      "endTime": 1777272053687,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272053687
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777272053702,
+      "endTime": 1777272053702,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272053702
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777272053717,
+      "endTime": 1777272053717,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272053717
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777272053735,
+      "endTime": 1777272053735,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272053735
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777272053766,
+      "endTime": 1777272053766,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777272053766
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777272053785,
+      "endTime": 1777272053785,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777272053785
+    },
+    {
+      "id": "trace_1777272053807_j5lj5i19",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777272053707,
+      "endTime": 1777272053807,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777272053807
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777272639657,
+      "endTime": 1777272639757,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777272639757
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777272639662,
+      "endTime": 1777272639762,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777272639762
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777272639777,
+      "endTime": 1777272639777,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272639777
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777272639789,
+      "endTime": 1777272639789,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272639789
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777272639801,
+      "endTime": 1777272639801,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272639801
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777272639812,
+      "endTime": 1777272639812,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272639812
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777272639824,
+      "endTime": 1777272639824,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777272639824
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777272639846,
+      "endTime": 1777272639846,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777272639846
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777272639863,
+      "endTime": 1777272639863,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777272639863
+    },
+    {
+      "id": "trace_1777272639880_zjx0a2qz",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777272639780,
+      "endTime": 1777272639880,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777272639880
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777273339478,
+      "endTime": 1777273339578,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777273339578
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777273339484,
+      "endTime": 1777273339584,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777273339584
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777273339597,
+      "endTime": 1777273339597,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777273339597
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777273339610,
+      "endTime": 1777273339610,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777273339610
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777273339622,
+      "endTime": 1777273339622,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777273339622
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777273339634,
+      "endTime": 1777273339634,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777273339634
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777273339646,
+      "endTime": 1777273339646,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777273339646
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777273339672,
+      "endTime": 1777273339672,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777273339672
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777273339690,
+      "endTime": 1777273339690,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777273339690
+    },
+    {
+      "id": "trace_1777273339709_m7koj2il",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777273339609,
+      "endTime": 1777273339709,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777273339710
+    },
+    {
+      "mission": "epoch-38-dogfood",
+      "phase": "dogfood",
+      "reasoning": "Testing V3.3 integration",
+      "outcome": "success"
+    },
+    {
+      "mission": "epoch-38-dogfood",
+      "phase": "dogfood",
+      "reasoning": "Testing V3.3 integration",
+      "outcome": "success"
+    },
+    {
+      "mission": "epoch-38-dogfood",
+      "phase": "dogfood",
+      "reasoning": "Testing V3.3 integration",
+      "outcome": "success"
+    },
+    {
+      "mission": "epoch-38-dogfood",
+      "phase": "dogfood",
+      "reasoning": "Testing V3.3 integration",
+      "outcome": "success"
+    },
+    {
+      "taskDescription": "Testing V3.3 integration",
+      "reasoning": "Testing V3.3 integration",
+      "phase": "dogfood",
+      "decision": "Validated V3.3 components",
+      "mission": "epoch-38-dogfood",
+      "outcome": "success",
+      "durationMs": 100
+    },
+    {
+      "taskDescription": "Testing V3.3 integration",
+      "reasoning": "Testing V3.3 integration",
+      "phase": "dogfood",
+      "decision": "Validated V3.3 components",
+      "mission": "epoch-38-dogfood",
+      "outcome": "success",
+      "durationMs": 100
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274233257,
+      "endTime": 1777274233357,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274233357
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274235619,
+      "endTime": 1777274235719,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274235719
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274251539,
+      "endTime": 1777274251639,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274251639
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274254977,
+      "endTime": 1777274255077,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274255077
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274293753,
+      "endTime": 1777274293853,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274293853
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274344416,
+      "endTime": 1777274344516,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274344516
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274350910,
+      "endTime": 1777274351010,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274351010
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274369014,
+      "endTime": 1777274369114,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274369114
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274413926,
+      "endTime": 1777274414026,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274414026
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274503957,
+      "endTime": 1777274504057,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274504057
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274601023,
+      "endTime": 1777274601123,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274601123
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274740022,
+      "endTime": 1777274740122,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274740122
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274810414,
+      "endTime": 1777274810514,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274810514
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777274915140,
+      "endTime": 1777274915240,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777274915240
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777275417478,
+      "endTime": 1777275417578,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777275417578
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777275473984,
+      "endTime": 1777275474084,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777275474084
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777275525628,
+      "endTime": 1777275525728,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777275525728
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777275620967,
+      "endTime": 1777275621067,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777275621067
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777275685363,
+      "endTime": 1777275685463,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777275685463
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777275826871,
+      "endTime": 1777275826971,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777275826971
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777275852928,
+      "endTime": 1777275853028,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777275853028
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777276038157,
+      "endTime": 1777276038257,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777276038257
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777276131789,
+      "endTime": 1777276131889,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777276131889
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777276303430,
+      "endTime": 1777276303530,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777276303530
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777276427346,
+      "endTime": 1777276427446,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777276427446
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777276674976,
+      "endTime": 1777276675076,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777276675076
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777276768683,
+      "endTime": 1777276768783,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777276768783
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777276835243,
+      "endTime": 1777276835343,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777276835343
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777277118409,
+      "endTime": 1777277118509,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777277118509
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777277275439,
+      "endTime": 1777277275539,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777277275539
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777277869319,
+      "endTime": 1777277869419,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777277869419
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777278029569,
+      "endTime": 1777278029669,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777278029669
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777278634366,
+      "endTime": 1777278634466,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777278634466
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777278842382,
+      "endTime": 1777278842482,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777278842482
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777279201619,
+      "endTime": 1777279201719,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777279201719
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777279287803,
+      "endTime": 1777279287903,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777279287903
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777279759409,
+      "endTime": 1777279759509,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777279759509
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777279814535,
+      "endTime": 1777279814635,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777279814635
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777280281997,
+      "endTime": 1777280282097,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777280282097
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777280548211,
+      "endTime": 1777280548311,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777280548311
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777280760750,
+      "endTime": 1777280760850,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777280760850
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777280893465,
+      "endTime": 1777280893565,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777280893565
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777281053754,
+      "endTime": 1777281053854,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777281053854
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777281449924,
+      "endTime": 1777281450024,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777281450024
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777281580206,
+      "endTime": 1777281580306,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777281580306
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777282365730,
+      "endTime": 1777282365830,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777282365830
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777282602502,
+      "endTime": 1777282602602,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777282602602
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777282858365,
+      "endTime": 1777282858465,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777282858465
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777283318377,
+      "endTime": 1777283318477,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777283318477
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777283482440,
+      "endTime": 1777283482540,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777283482540
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777283952057,
+      "endTime": 1777283952157,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777283952157
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777284085320,
+      "endTime": 1777284085420,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777284085420
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777284353605,
+      "endTime": 1777284353705,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777284353705
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777285051686,
+      "endTime": 1777285051786,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777285051786
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "test-task-001",
+      "taskDescription": "Testing V3.3 integration",
+      "success": true,
+      "startTime": 1777287099356,
+      "endTime": 1777287099456,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 5,
+      "toolSequence": [
+        "shell",
+        "read"
+      ],
+      "learnings": "Validated V3.3 components",
+      "createdAt": 1777287099456
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777292017651,
+      "endTime": 1777292017751,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777292017751
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777292017657,
+      "endTime": 1777292017757,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777292017757
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777292017771,
+      "endTime": 1777292017771,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777292017771
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777292017783,
+      "endTime": 1777292017783,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777292017783
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777292017794,
+      "endTime": 1777292017794,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777292017794
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777292017806,
+      "endTime": 1777292017806,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777292017806
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777292017818,
+      "endTime": 1777292017818,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777292017818
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777292017842,
+      "endTime": 1777292017842,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777292017842
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777292017858,
+      "endTime": 1777292017858,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777292017858
+    },
+    {
+      "id": "trace_1777292017874_wwrfbdz8",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777292017773,
+      "endTime": 1777292017873,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777292017874
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777305206714,
+      "endTime": 1777305206814,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777305206814
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777305206728,
+      "endTime": 1777305206828,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777305206828
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777305206860,
+      "endTime": 1777305206860,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305206860
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777305206884,
+      "endTime": 1777305206884,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305206884
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777305206912,
+      "endTime": 1777305206912,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305206912
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777305206938,
+      "endTime": 1777305206938,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305206938
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777305206961,
+      "endTime": 1777305206961,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305206961
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777305207019,
+      "endTime": 1777305207019,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777305207019
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777305207056,
+      "endTime": 1777305207056,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777305207056
+    },
+    {
+      "id": "trace_1777305207108_9wje16cq",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777305207008,
+      "endTime": 1777305207108,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777305207108
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777305283316,
+      "endTime": 1777305283416,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777305283416
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777305283325,
+      "endTime": 1777305283425,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777305283425
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777305283443,
+      "endTime": 1777305283443,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305283443
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777305283458,
+      "endTime": 1777305283458,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305283458
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777305283473,
+      "endTime": 1777305283473,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305283473
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777305283487,
+      "endTime": 1777305283487,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305283487
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777305283502,
+      "endTime": 1777305283502,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305283502
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777305283532,
+      "endTime": 1777305283532,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777305283532
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777305283558,
+      "endTime": 1777305283558,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777305283558
+    },
+    {
+      "id": "trace_1777305283581_e9bp5gka",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777305283481,
+      "endTime": 1777305283581,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777305283581
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777305783714,
+      "endTime": 1777305783814,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777305783814
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777305783735,
+      "endTime": 1777305783835,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777305783835
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777305783856,
+      "endTime": 1777305783856,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305783856
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777305783880,
+      "endTime": 1777305783880,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305783880
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777305783906,
+      "endTime": 1777305783906,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305783906
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777305783929,
+      "endTime": 1777305783929,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305783929
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777305783946,
+      "endTime": 1777305783946,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777305783946
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777305783972,
+      "endTime": 1777305783972,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777305783972
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777305783989,
+      "endTime": 1777305783989,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777305783989
+    },
+    {
+      "id": "trace_1777305784009_79b9xgya",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777305783909,
+      "endTime": 1777305784009,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777305784009
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777306254997,
+      "endTime": 1777306255097,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777306255097
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777306255041,
+      "endTime": 1777306255141,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777306255141
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777306255217,
+      "endTime": 1777306255217,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777306255217
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777306255294,
+      "endTime": 1777306255294,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777306255294
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777306255327,
+      "endTime": 1777306255327,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777306255327
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777306255369,
+      "endTime": 1777306255369,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777306255369
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777306255398,
+      "endTime": 1777306255398,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777306255398
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777306255447,
+      "endTime": 1777306255447,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777306255447
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777306255485,
+      "endTime": 1777306255485,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777306255485
+    },
+    {
+      "id": "trace_1777306255536_tu8qkpwn",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777306255435,
+      "endTime": 1777306255535,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777306255536
+    },
+    {
+      "id": "test_trace_001",
+      "taskId": "task_test_001",
+      "taskDescription": "Test task for logging",
+      "success": true,
+      "startTime": 1777307670711,
+      "endTime": 1777307670811,
+      "durationMs": 150,
+      "iterations": 1,
+      "toolCallCount": 2,
+      "messageCount": 4,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Test learnings",
+      "rawMessages": "{\"test\": true}",
+      "createdAt": 1777307670811
+    },
+    {
+      "taskId": "task_test_002",
+      "taskDescription": "Test auto-generated ID",
+      "success": false,
+      "startTime": 1777307670735,
+      "endTime": 1777307670835,
+      "durationMs": 100,
+      "iterations": 0,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "error"
+      ],
+      "createdAt": 1777307670835
+    },
+    {
+      "taskId": "task_phase_observe",
+      "taskDescription": "Test phase: observe",
+      "success": true,
+      "startTime": 1777307670865,
+      "endTime": 1777307670865,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777307670865
+    },
+    {
+      "taskId": "task_phase_orient",
+      "taskDescription": "Test phase: orient",
+      "success": true,
+      "startTime": 1777307670892,
+      "endTime": 1777307670892,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777307670892
+    },
+    {
+      "taskId": "task_phase_decide",
+      "taskDescription": "Test phase: decide",
+      "success": true,
+      "startTime": 1777307670934,
+      "endTime": 1777307670934,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777307670934
+    },
+    {
+      "taskId": "task_phase_act",
+      "taskDescription": "Test phase: act",
+      "success": true,
+      "startTime": 1777307670967,
+      "endTime": 1777307670967,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777307670967
+    },
+    {
+      "taskId": "task_phase_reflect",
+      "taskDescription": "Test phase: reflect",
+      "success": true,
+      "startTime": 1777307670996,
+      "endTime": 1777307670996,
+      "durationMs": 100,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "test"
+      ],
+      "learnings": "Phase test",
+      "createdAt": 1777307670996
+    },
+    {
+      "taskId": "task_search_001",
+      "taskDescription": "Debugging SQLite connection issue",
+      "success": true,
+      "startTime": 1777307671051,
+      "endTime": 1777307671051,
+      "durationMs": 200,
+      "iterations": 1,
+      "toolCallCount": 3,
+      "messageCount": 5,
+      "toolSequence": [
+        "read",
+        "shell",
+        "write"
+      ],
+      "learnings": "Always validate path exists before Database() call",
+      "createdAt": 1777307671051
+    },
+    {
+      "taskId": "task_tool_filter",
+      "taskDescription": "Test tool filtering",
+      "success": true,
+      "startTime": 1777307671095,
+      "endTime": 1777307671095,
+      "durationMs": 50,
+      "iterations": 1,
+      "toolCallCount": 1,
+      "messageCount": 2,
+      "toolSequence": [
+        "git",
+        "shell"
+      ],
+      "learnings": "Git workflow test",
+      "createdAt": 1777307671095
+    },
+    {
+      "id": "trace_1777307671135_05mjqhc1",
+      "taskId": "test-hook-exec",
+      "taskDescription": "Test hook execution",
+      "success": true,
+      "startTime": 1777307671034,
+      "endTime": 1777307671134,
+      "durationMs": 100,
+      "iterations": 2,
+      "toolCallCount": 2,
+      "messageCount": 2,
+      "toolSequence": [
+        "read",
+        "shell"
+      ],
+      "learnings": "Task completed",
+      "rawMessages": "[{\"role\":\"user\",\"content\":\"Test message\"},{\"role\":\"assistant\",\"content\":\"Test response\"}]",
+      "createdAt": 1777307671135
+    }
+  ]
+}
