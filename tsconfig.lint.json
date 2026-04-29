@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "target": "ESNext",
+    "module": "Preserve",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "types": ["bun"]
+  },
+  "include": [
+    "src/core/**/*.ts",
+    "src/relay.ts",
+    "src/sidecars/memory.ts",
+    "jobs/bun-orchestrator.ts"
+  ],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "src/components/**",
+    "src/ui/**",
+    "src/kms-service/**",
+    "src/api/**",
+    "src/__tests__/**",
+    "src/gateway/**",
+    "src/sandbox/**",
+    "workspace/**",
+    "agent-kernel/**"
+  ]
+}
