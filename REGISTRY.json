@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "name": "Meowju Harness Registry",
+  "description": "Single Source of Truth mapping to prevent architectural drift.",
+  "sources_of_truth": {
+    "CalculatorLogic": {
+      "path": "packages/harness/src/calculator/calculator.ts",
+      "description": "Authoritative state machine and parser for all calculator operations.",
+      "consumers": ["CalculatorUI.ts", "Calculator.tsx"]
+    },
+    "Authentication": {
+      "path": "packages/harness/src/api/routes/auth.routes.ts",
+      "description": "Primary gatekeeper for all session and security logic.",
+      "consumers": ["server.ts", "gateway.ts"]
+    },
+    "GatewayProtocol": {
+      "path": "packages/harness/src/gateway/meow-gateway.ts",
+      "description": "Communication protocol for WebSocket result streaming.",
+      "consumers": ["relay.ts"]
+    },
+    "ReasoningAudit": {
+      "path": "packages/kernel/src/sidecars/reasoning-audit-hook.ts",
+      "description": "Metacognitive trace storage for experience replay.",
+      "consumers": ["orchestrator.ts"]
+    }
+  },
+  "rules": [
+    "Before creating a new component, check if a related 'Source of Truth' exists in this registry.",
+    "Do not implement redundant business logic; import from the defined SSoT path.",
+    "Update this registry whenever a new primary domain is established."
+  ]
+}
