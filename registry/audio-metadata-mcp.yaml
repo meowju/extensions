@@ -1,0 +1,11 @@
+name: Audio Metadata MCP
+description: An MCP server for reading and writing ID3, ISRC, and metadata tags for professional audio assets.
+url: https://github.com/taglib/taglib-mcp
+superpowers:
+  - Natural language tagging of MP3, FLAC, OGG assets
+  - Automated ISRC code injection for distribution
+  - Library-wide metadata cleanup for stancsz production workflows
+installation:
+  type: mcp_config
+  command: Register the taglib-mcp server as a stdio connector.
+  notes: Essential for stancsz track metadata distribution and library sanitation.

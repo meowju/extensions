@@ -1,0 +1,11 @@
+name: n8n
+description: A visual workflow builder that exposes 400+ applications as reusable agent skills via the Model Context Protocol.
+url: https://github.com/n8n-io/n8n
+superpowers:
+  - 400+ third-party app integrations (Slack, Google, Jira, etc.)
+  - Visual logic orchestration for complex agent skill-building
+  - Self-hosted for complete data sovereignty
+installation:
+  type: self_hosted/docker
+  command: docker run -it --rm --name n8n -p 5678:5678 n8nio/n8n
+  notes: Use the n8n MCP server to expose your workflows directly to Meow.

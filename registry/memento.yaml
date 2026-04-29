@@ -1,0 +1,12 @@
+name: Memento
+description: Records AI coding sessions as Git notes to audit *why* an agent made a specific change.
+url: https://github.com/mandel-macaque/memento
+superpowers:
+  - Agent decision recording and traceability
+  - Session-to-git-note synchronization
+  - Simplifies post-mortem architectural audits
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add mandel-macaque/memento
+  install_command: /plugin install memento
+  notes: Provides the "Black Box" recorder for autonomous development cycles.

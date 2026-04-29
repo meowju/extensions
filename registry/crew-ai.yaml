@@ -1,0 +1,11 @@
+name: CrewAI
+description: A framework for Role-Based Orchestration, allowing specialized agents (Researcher, Writer) to collaborate autonomously.
+url: https://github.com/crewAIInc/crewAI
+superpowers:
+  - Role-based agent definitions
+  - Autonomous task delegation between specialized personas
+  - Process-driven collaboration (Sequential, Hierarchical)
+installation:
+  type: pip
+  command: pip install crewai
+  notes: Best for orchestrating multi-model teams (e.g., Gemini for research, GPT for writing).

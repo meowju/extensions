@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-04-26T05:45:12.741Z",
+  "channelId": "1494151213481197578",
+  "userPrompt": "test",
+  "attemptPath": "meow→claude-code",
+  "finalBackend": "meow",
+  "finalResponseLength": 0,
+  "meowError": "error: Module not found \"/app/meow-run.ts\"",
+  "fallbackSuccess": false
+}

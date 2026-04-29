@@ -1,0 +1,12 @@
+name: Gorgias AI Agent
+description: Specialized customer support skill for Shopify, automating ticket handling, returns, and order edits.
+url: https://github.com/gorgias/ai-agent
+superpowers:
+  - Deep Shopify Support flow integration
+  - Autonomous handling of returns and order status edits
+  - Reduces human helpdesk involvement for routine queries
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add gorgias/ai-agent
+  install_command: /plugin install gorgias-ai-agent
+  notes: Highly specialized for high-volume Shopify customer service departments.

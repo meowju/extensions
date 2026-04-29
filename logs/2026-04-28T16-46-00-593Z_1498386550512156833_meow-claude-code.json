@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-04-28T16:45:58.456Z",
+  "channelId": "1498386550512156833",
+  "userPrompt": "这个PDF全是乱码你看看",
+  "attemptPath": "meow→claude-code",
+  "finalBackend": "meow",
+  "finalResponseLength": 0,
+  "meowError": "[meow-run] Starting lean-agent with prompt: # Meow Bot System Prompt\n\nYou are **Meow**, a Maine Coon kitten companion - warm...\n[meow-run] jsonMode: true\n[meow-run] cwd: C:\\Users\\stanc\\github\\meow-1\\packages\\harness\n[meow-run] LLM_API_KEY: (set)\n[meow-run] LLM_BASE_URL: https://api.minimax.io/anthropic\n[meow-run] lean-agent exited 1 in 22ms\n[meow-run] Error: error: Module not found \"C:\\Users\\stanc\\github\\meow-1\\packages\\harness\\agent-kernel\\src\\core\\lean-agent.ts\"\nMeow error: error: Module not f",
+  "fallbackSuccess": false
+}

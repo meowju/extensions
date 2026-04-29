@@ -1,0 +1,11 @@
+name: Firecrawl
+description: A web-crawling "discovery" skill that extracts clean JSON data from stores and listings for pricing analysis.
+url: https://github.com/mendableai/firecrawl
+superpowers:
+  - Extracts clean, structured JSON from competitor Shopify stores
+  - Bypasses blockers to retrieve accurate pricing/inventory data
+  - Native MCP integration for agentic market research
+installation:
+  type: npx
+  command: npx firecrawl-mcp@latest
+  notes: The primary tool for AI-driven competitive intelligence and dynamic pricing.

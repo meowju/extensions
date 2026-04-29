@@ -1,0 +1,13 @@
+name: Claude Code Skills
+description: The largest community library for Claude Code with over 235 production-ready skills spanning engineering, security, and strategy.
+url: https://github.com/alirezarezvani/claude-skills
+superpowers:
+  - Engineering skills (DevOps, Security Audits)
+  - Product & Project Management workflows
+  - Marketing & Business growth strategy
+  - C-Level advisory and decision frameworks
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add alirezarezvani/claude-skills
+  install_command: "/plugin install engineering-skills@claude-code-skills (options: product-skills, marketing-skills, c-level-skills)"
+  notes: Skills consist of SKILL.md files and zero-dependency CLI scripts.

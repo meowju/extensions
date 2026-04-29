@@ -1,0 +1,11 @@
+name: Gemini API Docs MCP
+description: An MCP server that connects agents to live, official Gemini documentation to prevent hallucinations of outdated syntax.
+url: https://github.com/google-gemini/gemini-api-docs-mcp
+superpowers:
+  - Real-time documentation grounding
+  - Eliminates syntax hallucinations for Google-specific APIs
+  - Standardized MCP interface for all agents
+installation:
+  type: mcp_config
+  command: Register in your MCP bridge config as a stdio/node server.
+  notes: Essential for developers building on the Google Cloud / Gemini platform.

@@ -1,0 +1,13 @@
+
+
+name: Deploy
+description: Google Cloud + Kubernetes deployment with Skaffold for live reload.
+url: https://github.com/TomerFi/glcoud-skaffold-example
+superpowers:
+  - gcloud authentication and configuration
+  - kubectl apply for Kubernetes deployments
+  - skaffold dev loop for live reload
+installation:
+  type: npx
+  command: npx @google-cloud/skaffold
+  notes: Requires gcloud CLI and kubectl installed. Cloud deployment skill.

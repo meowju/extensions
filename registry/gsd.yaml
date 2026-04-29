@@ -1,0 +1,11 @@
+name: GSD (Get Shit Done)
+description: A context engineering layer that breaks development into phases to solve "context rot" and maintain high output quality.
+url: https://github.com/gsd-build/get-shit-done
+superpowers:
+  - Context isolation using fresh windows for different phases
+  - Multi-platform support (Claude Code, Cursor, Gemini CLI, etc.)
+  - Phase-driven workflow: Discuss -> Plan -> Execute -> Verify -> Ship
+installation:
+  type: npx
+  command: npx get-shit-done-cc@latest
+  notes: The installer prompts for preferred runtime (e.g., Claude Code) and installation scope.

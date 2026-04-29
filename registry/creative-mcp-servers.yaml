@@ -1,0 +1,11 @@
+name: Awesome MCP Servers (Creative Tooling)
+description: A curated list of MCP servers for Blender, Figma, Photopea, and other creative tools.
+url: https://github.com/punkpeye/awesome-mcp-servers
+superpowers:
+  - 3D modeling automation via Blender
+  - Design-to-code via Figma
+  - Creative image editing via Photopea
+installation:
+  type: mcp_config
+  command: Follow the repository to find and configure creative MCP connectors.
+  notes: Bridges the gap between agentic logic and professional creative workflows.

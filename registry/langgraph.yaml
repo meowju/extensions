@@ -1,0 +1,11 @@
+name: LangGraph
+description: The industry standard for building stateful, multi-agent applications with cyclic graphs and time-travel debugging.
+url: https://github.com/langchain-ai/langgraph
+superpowers:
+  - Cyclic graph orchestration for complex workflows
+  - Stateful persistence and "time-travel" (rewind/correct)
+  - Seamless integration with the LangChain ecosystem
+installation:
+  type: pip
+  command: pip install langgraph
+  notes: Best for production-grade agentic systems requiring high reliability and debuggability.

@@ -1,0 +1,12 @@
+name: Triple Whale Moby Agents
+description: Business Intelligence agents for e-commerce, consolidating ROAS, CAC, and unified store data.
+url: https://github.com/TripleWhale/moby-agents
+superpowers:
+  - Plain English querying of ROAS, CAC, and LTV metrics
+  - Unified data views across Shopify, TikTok, and Meta Ads
+  - Predictive modeling for e-commerce scaling
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add TripleWhale/moby-agents
+  install_command: /plugin install moby-agents
+  notes: The gold standard for AI-driven e-commerce business intelligence.

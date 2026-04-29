@@ -1,0 +1,12 @@
+name: PlanetScale Agent Skill
+description: Teaches agents to handle migrations and indexing specifically for serverless MySQL.
+url: https://github.com/planetscale/agent-skill
+superpowers:
+  - Advanced MySQL indexing and query optimization
+  - Automated schema migration management
+  - Serverless database operational mastery
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add planetscale/agent-skill
+  install_command: /plugin install agent-skill
+  notes: Essential for high-traffic data-intensive AI native startups.

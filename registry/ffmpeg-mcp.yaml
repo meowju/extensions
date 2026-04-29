@@ -1,0 +1,11 @@
+name: FFmpeg MCP
+description: Direct agentic access to FFmpeg for local audio processing, conversion, and beat detection.
+url: https://github.com/mcp-audio/ffmpeg-server
+superpowers:
+  - Natural language audio conversion and bit-depth adjustment
+  - Automated beat tracking and tempo detection (using librosa bridge)
+  - Batch normalization and loudness conforming for stancsz mastering
+installation:
+  type: mcp_config
+  command: Requires local ffmpeg installation. Register via meow-bridge.json.
+  notes: Turns the agent into a "Mastering Assistant" for local audio directories.

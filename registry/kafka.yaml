@@ -1,0 +1,10 @@
+name: Kafka
+description: Event streaming with Kafka - produce/consume events, manage topics, schema registry.
+url: https://github.com/confluentinc/kafka-tutorials
+superpowers:
+  - kafka-console-producer for event publishing
+  - kafka-console-consumer for event consumption
+  - ksqlDB for stream processing
+installation:
+  type: reference
+  notes: Kafka streaming skill. Install Confluent Platform or use managed Kafka service.

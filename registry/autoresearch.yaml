@@ -1,0 +1,12 @@
+name: AutoResearch
+description: An autonomous machine learning experimentation loop for goal-directed iteration and code optimization.
+url: https://github.com/uditgoenka/autoresearch
+superpowers:
+  - Iterative "Propose-Test-Revert" loops
+  - Goal-directed code optimization based on measurable metrics
+  - Automated benchmark discovery and benchmarking
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add uditgoenka/autoresearch
+  install_command: /plugin install autoresearch
+  notes: Inspired by Andrej Karpathy. Requires a measurable success metric to function correctly.

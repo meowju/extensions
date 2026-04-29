@@ -1,0 +1,12 @@
+name: Clawify
+description: An open-source Shopify Copilot that bridges AI agents to Shopify store actions like inventory management and SEO.
+url: https://github.com/Clawify/clawify
+superpowers:
+  - Real-time inventory and order tracking for Shopify
+  - Automated product description and SEO metadata updates
+  - Autonomous customer engagement flows
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add Clawify/clawify
+  install_command: /plugin install clawify
+  notes: Strategic bridge for moving from manual copy-pasting to autonomous store management.

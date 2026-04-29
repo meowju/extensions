@@ -1,0 +1,11 @@
+name: OpenAI Swarm
+description: A lightweight, educational orchestration framework for building highly controllable multi-agent systems.
+url: https://github.com/openai/swarm
+superpowers:
+  - Minimalist agent orchestration
+  - Precise control over agent hand-offs
+  - Low-latency multi-agent collaboration
+installation:
+  type: pip
+  command: pip install git+https://github.com/openai/swarm.git
+  notes: Excellent for prototyping custom swarm logic without framework overhead.

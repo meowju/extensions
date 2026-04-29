@@ -1,0 +1,11 @@
+name: Epidemic Sound MCP
+description: A curation-focused MCP server for querying professional music libraries using descriptive, context-aware prompts.
+url: https://github.com/epidemicsound/mcp-query
+superpowers:
+  - Mood-based and context-aware audio search (e.g., "dark forest mood")
+  - Seamless integration between creative briefs and music discovery
+  - High-fidelity curation for video and podcast production
+installation:
+  type: mcp_config
+  command: Register with your Epidemic Sound API key via standard MCP bridge.
+  notes: Best for content teams needing creative-first audio selection.

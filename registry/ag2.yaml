@@ -1,0 +1,11 @@
+name: AG2 (Evolution of AutoGen)
+description: A framework for scaling multi-agent systems, excelling at conversational problem-solving where agents collaborate to find solutions.
+url: https://github.com/ag2ai/ag2
+superpowers:
+  - Conversational multi-agent problem solving
+  - Customizable agent behaviors and tool-use
+  - Evolutionary refinement of code solutions through agent "argumentation"
+installation:
+  type: pip
+  command: pip install ag2
+  notes: The community-led successor to Microsoft's AutoGen. Requires Python >= 3.10.

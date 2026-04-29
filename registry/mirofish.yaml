@@ -1,0 +1,13 @@
+name: MiroFish
+description: AI-powered Miro board interaction for visual collaboration and diagramming.
+url: https://github.com/666ghj/MiroFish
+superpowers:
+  - Miro board authentication with OAuth
+  - Read/write widgets to boards
+  - Visual thinking and diagramming
+  - Board-based brainstorming
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add 666ghj/MiroFish
+  install_command: /plugin install mirofish
+  notes: Requires Miro API credentials. Visual collaboration for creative tasks.

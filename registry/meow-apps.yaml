@@ -1,0 +1,9 @@
+name: Meow Apps
+description: Desktop and dashboard applications for the Meow sovereign agent platform.
+url: https://github.com/stancsz/meow
+superpowers:
+  - meow-desktop: Electron-based desktop companion (Embers the Maine Coon)
+  - meow-dashboard: Next.js web UI for agent monitoring and configuration
+installation:
+  type: reference
+  notes: Apps are standalone components. See individual READMEs for development instructions.

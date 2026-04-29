@@ -1,0 +1,12 @@
+name: Awesome Claude Code Subagents
+description: A collection of ready-made subagents (Security, API Designer, Docs) to scale from single agent to a multi-agent team.
+url: https://github.com/VoltAgent/awesome-claude-code-subagents
+superpowers:
+  - Ready-made subagents for specialized domains (Security, API, Docs)
+  - Encourages delegation workflows
+  - Enhances multi-agent team orchestration
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add VoltAgent/awesome-claude-code-subagents
+  install_command: /plugin install awesome-claude-code-subagents
+  notes: Best for teams moving beyond a single agent workstation to a specialized swarm.

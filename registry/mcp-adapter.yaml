@@ -1,0 +1,11 @@
+name: mcp-adapter
+description: The canonical tool for WordPress and WooCommerce, allowing agents to manage products, posts, and media directly.
+url: https://github.com/mcp-adapter/mcp-adapter
+superpowers:
+  - Direct read/write access to WooCommerce catalog and orders
+  - Headless management of WordPress posts and media
+  - Exposes the official "Abilities API" for agentic interaction
+installation:
+  type: mcp_config
+  command: Register as a standard MCP server in your bridge configuration.
+  notes: Best for businesses running on WordPress/WooCommerce seeking autonomous operations.

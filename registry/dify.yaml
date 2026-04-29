@@ -1,0 +1,11 @@
+name: Dify
+description: A unified LLM application development platform that integrates orchestration, RAG, and multi-model support into one visual interface.
+url: https://github.com/langgenius/dify
+superpowers:
+  - Visual Prompt Engineering & Workflow design
+  - Built-in RAG and Knowledge Base management
+  - Multi-model support (Claude, Gemini, GPT, Llama)
+installation:
+  type: self_hosted/docker
+  command: cd docker && docker-compose up -d
+  notes: The "Skill Aggregator" of choice for rapidly building and deploying agentic applications.
