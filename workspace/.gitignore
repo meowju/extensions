@@ -1,0 +1,107 @@
+# dependencies
+node_modules
+
+# output
+out
+dist
+*.tgz
+
+# code coverage
+coverage
+*.lcov
+
+# logs
+logs
+*.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# dotenv
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# IDEs
+.idea
+.DS_Store
+**.db
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+_override.tf
+_override.tf.json
+.terraformrc
+terraform.rc
+*.tar
+**.lock.hcl
+remote-development/DEPLOYED.md
+
+# Legacy archived directories (see Git history for reference)
+/.agents/
+
+# Specific subdirs in packages to ignore (not the whole packages/)
+packages/core/
+packages/db/
+
+# Embedded competitor repos (cloned for research)
+docs/research/competitors/*/
+
+# Meow user data (session logs, tasks, memory)
+.agent-kernel/
+.meow/
+packages/kernel/tests/output/
+
+# Claude Code data
+.claude/
+
+# Harvest temporary clones
+tmp/
+scratch/
+
+# Trash (removed items)
+.trash/
+DELETED_*/
+$null
+
+# Test output
+test-*/
+test-output*/
+playwright-report/
+test-results/
+
+# Bundler cache
+.parcel-cache/
+
+# Editor swap files
+*.swp
+*.swo
+
+# Meow Agent Harness
+packages/harness/scratch/
+packages/harness/data/
+packages/harness/dogfood/results/
+packages/harness/evolve/
+packages/harness/computer/
+packages/harness/design/proposals/
+packages/harness/logs/
+NUL
+*.log
+*.tmp
+*.txt
+flycheck_*
+
+# Dogfood test outputs
+dogfood/

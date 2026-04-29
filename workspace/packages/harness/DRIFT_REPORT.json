@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-04-27T17:09:23.868Z",
+  "twins": {
+    "auth.controller": [
+      "\\packages\\harness\\src\\api\\controllers\\auth.controller.ts",
+      "\\packages\\harness\\src\\auth\\controllers\\auth.controller.ts"
+    ],
+    "auth.middleware": [
+      "\\packages\\harness\\src\\api\\middleware\\auth.middleware.ts",
+      "\\packages\\harness\\src\\auth\\middleware\\auth.middleware.ts"
+    ],
+    "auth.types": [
+      "\\packages\\harness\\src\\api\\middleware\\auth.types.ts",
+      "\\packages\\harness\\src\\auth\\types\\auth.types.ts"
+    ],
+    "jwt.service": [
+      "\\packages\\harness\\src\\api\\middleware\\jwt.service.ts",
+      "\\packages\\harness\\src\\auth\\services\\jwt.service.ts"
+    ],
+    "auth.routes": [
+      "\\packages\\harness\\src\\api\\routes\\auth.routes.ts",
+      "\\packages\\harness\\src\\auth\\routes\\auth.routes.ts"
+    ],
+    "server": [
+      "\\packages\\harness\\src\\api\\server.ts",
+      "\\packages\\harness\\src\\server.ts"
+    ],
+    "calculator": [
+      "\\packages\\harness\\src\\calculator\\calculator.ts",
+      "\\packages\\harness\\src\\calculator.ts",
+      "\\packages\\harness\\src\\Calculator.tsx",
+      "\\packages\\harness\\src\\components\\Calculator.tsx",
+      "\\packages\\harness\\src\\types\\Calculator.ts",
+      "\\packages\\harness\\src\\utils\\calculator.ts"
+    ],
+    "item.model": [
+      "\\packages\\harness\\src\\database\\models\\item.model.ts",
+      "\\packages\\harness\\src\\models\\item.model.ts"
+    ],
+    "user.model": [
+      "\\packages\\harness\\src\\database\\models\\user.model.ts",
+      "\\packages\\harness\\src\\models\\user.model.ts"
+    ],
+    "hello": [
+      "\\packages\\harness\\src\\hello.ts",
+      "\\packages\\harness\\src\\utils\\hello.ts"
+    ]
+  },
+  "verdict": "INFECTED"
+}

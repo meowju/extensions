@@ -1,0 +1,143 @@
+/**
+ * StatusCard Demo Styles
+ *
+ * Styles for the StatusCard demonstration component.
+ *
+ * @module components/StatusCard/StatusCard.demo.css
+ * @version 1.0.0
+ */
+
+.status-card-demo {
+  --demo-spacing: 1.5rem;
+  --demo-radius: 12px;
+  --demo-bg: #f8fafc;
+  --demo-border: #e2e8f0;
+  --demo-text: #1a202c;
+  --demo-text-muted: #64748b;
+
+  padding: var(--demo-spacing);
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--demo-bg);
+  border-radius: var(--demo-radius);
+}
+
+.status-card-demo__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--demo-text);
+  margin: 0 0 var(--demo-spacing) 0;
+}
+
+.status-card-demo__subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--demo-text);
+  margin: 0 0 1rem 0;
+}
+
+.status-card-demo__section {
+  margin-bottom: var(--demo-spacing);
+  padding-bottom: var(--demo-spacing);
+  border-bottom: 1px solid var(--demo-border);
+}
+
+.status-card-demo__section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ============================================================================
+   CONTROLS
+   ============================================================================ */
+
+.status-card-demo__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: var(--demo-spacing);
+  padding: 1rem;
+  background-color: white;
+  border-radius: var(--demo-radius);
+  border: 1px solid var(--demo-border);
+}
+
+.status-card-demo__fieldset {
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.status-card-demo__legend {
+  font-weight: 600;
+  color: var(--demo-text);
+  padding: 0 0.5rem;
+}
+
+.status-card-demo__fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--demo-text-muted);
+  font-size: 0.875rem;
+}
+
+.status-card-demo__fieldset input[type="radio"] {
+  cursor: pointer;
+}
+
+/* ============================================================================
+   GRIDS
+   ============================================================================ */
+
+.status-card-demo__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.status-card-demo__grid--columns {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* ============================================================================
+   CHILDREN CONTENT
+   ============================================================================ */
+
+.status-card-demo__children {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--demo-text-muted);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.status-card-demo__children span {
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+}
+
+/* ============================================================================
+   SELECTED STATE
+   ============================================================================ */
+
+.status-card-demo__selected {
+  margin-top: var(--demo-spacing);
+  padding: 1rem;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--demo-radius);
+  color: #1e40af;
+  font-size: 0.875rem;
+}
+
+.status-card-demo__selected strong {
+  font-weight: 600;
+}

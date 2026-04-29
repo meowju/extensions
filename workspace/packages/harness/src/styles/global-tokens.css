@@ -1,0 +1,99 @@
+/**
+ * Meowju Calculator - Global Token System
+ * Centralized CSS variables for theming and consistency
+ */
+
+/* ============================================
+   CALCULATOR TOKENS (PRIMARY)
+   ============================================ */
+:root {
+  /* Calculator Core Colors */
+  --calc-bg: #1a1a2e;
+  --calc-display-bg: #16213e;
+  --calc-display-text: #00ff88;
+  --calc-number-bg: #0f3460;
+  --calc-number-hover: #1a4a7a;
+  --calc-operator-bg: #e94560;
+  --calc-operator-hover: #ff6b6b;
+  --calc-function-bg: #f5a623;
+  --calc-function-hover: #ffb84d;
+  --calc-text-primary: #ffffff;
+  --calc-text-secondary: #a0a0a0;
+
+  /* Calculator Layout */
+  --calc-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  --calc-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  --calc-button-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --calc-border-radius: 8px;
+  --calc-max-width: 320px;
+  --calc-padding: 16px;
+  --calc-gap: 8px;
+
+  /* Typography */
+  --calc-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --calc-font-mono: 'Orbitron', 'Roboto Mono', monospace;
+  --calc-font-size-display: 2.5rem;
+  --calc-font-size-expression: 0.875rem;
+  --calc-font-size-button: 1.5rem;
+
+  /* Button sizing */
+  --calc-button-height: 60px;
+  --calc-button-min-height: 44px;
+
+  /* Transitions */
+  --calc-transition-fast: 100ms ease-out;
+  --calc-transition-normal: 150ms ease;
+  --calc-transition-slow: 300ms ease;
+}
+
+/* ============================================
+   LIGHT THEME TOKENS
+   ============================================ */
+[data-theme="light"],
+:root[data-theme="light"] {
+  --calc-bg: #f5f5f5;
+  --calc-display-bg: #ffffff;
+  --calc-display-text: #1a1a2e;
+  --calc-number-bg: #ffffff;
+  --calc-number-hover: #e8e8e8;
+  --calc-text-primary: #1a1a2e;
+  --calc-text-secondary: #666666;
+  --calc-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  --calc-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  --calc-button-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   CONTRAST THEME TOKENS
+   ============================================ */
+[data-theme="high-contrast"] {
+  --calc-bg: #000000;
+  --calc-display-bg: #1a1a1a;
+  --calc-display-text: #ffffff;
+  --calc-number-bg: #2a2a2a;
+  --calc-number-hover: #3a3a3a;
+  --calc-operator-bg: #ff6600;
+  --calc-operator-hover: #ff8533;
+  --calc-function-bg: #ffcc00;
+  --calc-function-hover: #ffdd33;
+  --calc-text-primary: #ffffff;
+  --calc-text-secondary: #cccccc;
+}
+
+/* ============================================
+   SOBERO THEME TOKENS (Sovereign Brand)
+   ============================================ */
+[data-theme="sovereign"] {
+  --calc-bg: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  --calc-display-bg: #0f0f1a;
+  --calc-display-text: #ffd700;
+  --calc-number-bg: #2d2d44;
+  --calc-number-hover: #3d3d5c;
+  --calc-operator-bg: #e94560;
+  --calc-operator-hover: #ff6b6b;
+  --calc-function-bg: #3498db;
+  --calc-function-hover: #5dade2;
+  --calc-text-primary: #ffffff;
+  --calc-text-secondary: #a0a0a0;
+  --calc-shadow: 0 10px 40px rgba(233, 69, 96, 0.3);
+}

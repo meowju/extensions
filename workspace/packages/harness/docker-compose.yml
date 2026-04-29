@@ -1,0 +1,35 @@
+services:
+  agent-harness:
+    build:
+      context: /c/Users/stanc/github/meow-1
+      dockerfile: packages/harness/Dockerfile
+    # env_file: loaded from .env at runtime by entrypoint
+    environment:
+      - NODE_ENV=production
+      - HOME=/home/appuser
+      - SHELL=/bin/bash
+      - GH_PAT=${GH_PAT}
+      - BACKUP_REPO=${BACKUP_REPO:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - ANTHROPIC_BASE_URL=${ANTHROPIC_BASE_URL:-https://api.minimax.io/anthropic}
+      - LLM_API_KEY=${ANTHROPIC_API_KEY}
+      - LLM_BASE_URL=${ANTHROPIC_BASE_URL:-https://api.minimax.io/anthropic}
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    restart: unless-stopped
+    volumes:
+      - ./mcp-null.json:/app/mcp-null.json:ro
+      - ./mcp-bridge.json:/app/mcp-bridge.json:ro
+      - ./data:/app/data
+      - ./.claude:/app/.claude
+      - ../kernel:/app/agent-kernel:rw
+      - ./JOB.md:/app/JOB.md:ro
+      - ./src:/app/src:rw
+      - ./jobs:/app/jobs:rw
+      - ./evolve:/app/evolve:rw
+      - ./dogfood:/app/dogfood:rw
+      - ./design:/app/design:rw
+      - /c/Users/stanc/github/meow-1/.git:/app/.git:ro
+      - ./computer:/app/agent-harness/computer:rw
+      - ./workspace:/app/workspace:rw

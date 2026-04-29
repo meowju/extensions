@@ -1,0 +1,332 @@
+/**
+ * StatusCard Styles
+ *
+ * CSS Module for StatusCard component.
+ * Uses CSS custom properties for theming and ensures
+ * consistent styling across different status levels.
+ *
+ * @module components/StatusCard/StatusCard.module.css
+ * @version 1.0.0
+ */
+
+/* ============================================================================
+   CSS CUSTOM PROPERTIES (Design Tokens)
+   ============================================================================ */
+
+.status-card {
+  /* Default color scheme */
+  --status-card-bg: var(--color-surface, #ffffff);
+  --status-card-border: var(--color-border, #e2e8f0);
+  --status-card-text: var(--color-text, #1a202c);
+  --status-card-text-muted: var(--color-text-muted, #718096);
+  
+  /* Status-specific colors (defaults) */
+  --status-color: var(--color-neutral, #718096);
+  --status-bg-subtle: var(--color-neutral-bg, #f7fafc);
+  --status-border: var(--color-neutral-border, #e2e8f0);
+  
+  /* Component-specific tokens */
+  --status-card-radius: var(--radius-md, 8px);
+  --status-card-shadow: var(--shadow-sm, 0 1px 2px rgba(0, 0, 0, 0.05));
+  --status-card-padding: var(--space-4, 1rem);
+  --status-card-gap: var(--space-3, 0.75rem);
+  
+  /* Animation timing */
+  --status-card-transition: 150ms ease-in-out;
+}
+
+/* ============================================================================
+   BASE COMPONENT STYLES
+   ============================================================================ */
+
+.status-card {
+  /* Layout */
+  display: flex;
+  align-items: flex-start;
+  gap: var(--status-card-gap);
+  padding: var(--status-card-padding);
+  border-radius: var(--status-card-radius);
+  border: 1px solid var(--status-card-border);
+  background-color: var(--status-card-bg);
+  box-shadow: var(--status-card-shadow);
+  
+  /* Typography */
+  font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+  color: var(--status-card-text);
+  
+  /* Interaction defaults */
+  cursor: default;
+  transition: box-shadow var(--status-card-transition),
+              background-color var(--status-card-transition),
+              transform var(--status-card-transition);
+  
+  /* Reset button defaults */
+  border: 1px solid var(--status-card-border);
+  text-align: left;
+  width: 100%;
+}
+
+/* Button variant (no border visible) */
+.status-card[role="button"],
+.status-card button {
+  cursor: pointer;
+}
+
+/* Interactive state (focus ring) */
+.status-card--clickable:focus-visible,
+.status-card--interactive:focus-visible {
+  outline: 2px solid var(--status-color);
+  outline-offset: 2px;
+}
+
+/* Hover state */
+.status-card--clickable:hover,
+.status-card--interactive:hover {
+  background-color: var(--status-bg-subtle);
+}
+
+/* Active/pressed state */
+.status-card--clickable:active,
+.status-card--interactive:active {
+  transform: scale(0.99);
+}
+
+/* ============================================================================
+   STATUS VARIANTS
+   ============================================================================ */
+
+/* Success (Green) */
+.status-card--success {
+  --status-color: var(--color-success, #10b981);
+  --status-bg-subtle: var(--color-success-bg, #ecfdf5);
+  --status-border: var(--color-success-border, #a7f3d0);
+}
+
+/* Warning (Amber) */
+.status-card--warning {
+  --status-color: var(--color-warning, #f59e0b);
+  --status-bg-subtle: var(--color-warning-bg, #fffbeb);
+  --status-border: var(--color-warning-border, #fde68a);
+}
+
+/* Error (Red) */
+.status-card--error {
+  --status-color: var(--color-error, #ef4444);
+  --status-bg-subtle: var(--color-error-bg, #fef2f2);
+  --status-border: var(--color-error-border, #fecaca);
+}
+
+/* Info (Blue) */
+.status-card--info {
+  --status-color: var(--color-info, #3b82f6);
+  --status-bg-subtle: var(--color-info-bg, #eff6ff);
+  --status-border: var(--color-info-border, #bfdbfe);
+}
+
+/* Neutral (Gray) - Default */
+.status-card--neutral {
+  --status-color: var(--color-neutral, #718096);
+  --status-bg-subtle: var(--color-neutral-bg, #f7fafc);
+  --status-border: var(--color-neutral-border, #e2e8f0);
+}
+
+/* ============================================================================
+   SIZE VARIANTS
+   ============================================================================ */
+
+.status-card--sm {
+  --status-card-padding: var(--space-2, 0.5rem);
+  --status-card-gap: var(--space-2, 0.5rem);
+  font-size: 0.875rem;
+}
+
+.status-card--md {
+  --status-card-padding: var(--space-4, 1rem);
+  --status-card-gap: var(--space-3, 0.75rem);
+  font-size: 1rem;
+}
+
+.status-card--lg {
+  --status-card-padding: var(--space-6, 1.5rem);
+  --status-card-gap: var(--space-4, 1rem);
+  font-size: 1.125rem;
+}
+
+/* ============================================================================
+   STATUS INDICATOR
+   ============================================================================ */
+
+.status-card__indicator {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--status-color);
+  margin-top: 6px;
+}
+
+/* Size variants for indicator */
+.status-card--sm .status-card__indicator {
+  width: 8px;
+  height: 8px;
+  margin-top: 4px;
+}
+
+.status-card--lg .status-card__indicator {
+  width: 12px;
+  height: 12px;
+  margin-top: 8px;
+}
+
+/* ============================================================================
+   ANIMATION VARIANTS
+   ============================================================================ */
+
+.status-card__indicator--pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.status-card__indicator--bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.status-card__indicator--fade {
+  animation: fade 2s ease-in-out infinite;
+}
+
+/* Keyframes */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes fade {
+  0%, 100% {
+    background-color: var(--status-color);
+  }
+  50% {
+    background-color: var(--status-bg-subtle);
+  }
+}
+
+/* ============================================================================
+   CONTENT AREA
+   ============================================================================ */
+
+.status-card__content {
+  flex: 1;
+  min-width: 0; /* Prevent text overflow */
+}
+
+.status-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--status-card-gap);
+}
+
+.status-card__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1, 0.25rem);
+}
+
+.status-card__title {
+  font-weight: 600;
+  color: var(--status-card-text);
+  line-height: 1.4;
+}
+
+.status-card__description {
+  font-size: 0.875em;
+  color: var(--status-card-text-muted);
+  line-height: 1.5;
+}
+
+.status-card__body {
+  margin-top: var(--space-3, 0.75rem);
+  padding-top: var(--space-3, 0.75rem);
+  border-top: 1px solid var(--status-card-border);
+}
+
+/* ============================================================================
+   ICON STYLES
+   ============================================================================ */
+
+.status-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--status-color);
+  flex-shrink: 0;
+}
+
+.status-card__icon--icon-only {
+  margin: calc(-1 * var(--status-card-padding));
+  padding: var(--status-card-padding);
+  background-color: var(--status-bg-subtle);
+  border-radius: var(--status-card-radius);
+}
+
+.status-card__icon--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.status-card__icon--md {
+  width: 20px;
+  height: 20px;
+}
+
+.status-card__icon--lg {
+  width: 24px;
+  height: 24px;
+}
+
+.status-card__icon-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .status-card,
+  .status-card__indicator--pulse,
+  .status-card__indicator--bounce,
+  .status-card__indicator--fade {
+    animation: none;
+  }
+  
+  .status-card {
+    transition: none;
+  }
+}
+
+/* ============================================================================
+   DARK MODE SUPPORT (Optional)
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  .status-card {
+    --status-card-bg: var(--color-surface-dark, #1a1a2e);
+    --status-card-border: var(--color-border-dark, #2d3748);
+    --status-card-text: var(--color-text-dark, #f7fafc);
+    --status-card-text-muted: var(--color-text-muted-dark, #a0aec0);
+  }
+}
