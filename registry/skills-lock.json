@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "docx": {
+      "source": "local:meowju/skills",
+      "sourceType": "local",
+      "skillPath": "source/docx/SKILL.md",
+      "computedHash": "f84a238285cbbba2722d1fdf62523413529e46615232ec270842a7c1413ea57b"
+    },
+    "pdf": {
+      "source": "local:meowju/skills",
+      "sourceType": "local",
+      "skillPath": "source/pdf/SKILL.md",
+      "computedHash": "875dba9f5005dee03b0db3ab24b586ec2b1c42bfab1299ef305eb28de2d3fdbc"
+    },
+    "pptx": {
+      "source": "local:meowju/skills",
+      "sourceType": "local",
+      "skillPath": "source/pptx/SKILL.md",
+      "computedHash": "c7533c6018dac3d740e11fb09163ed444fba3dca6189051681af639b1f015f87"
+    },
+    "xlsx": {
+      "source": "local:meowju/skills",
+      "sourceType": "local",
+      "skillPath": "source/xlsx/SKILL.md",
+      "computedHash": "28d54f6e89367f428d3c2b1eae460afa6765219da46dd840e677bc4da23e3be8"
+    },
+    "skill-creator": {
+      "source": "local:meowju/skills",
+      "sourceType": "local",
+      "skillPath": "source/skill-creator/SKILL.md",
+      "computedHash": "c99012bb8ca4bfbd833a598f3048756858378535b34b2f978b57c7d104ac1381"
+    },
+    "skill-security-auditor": {
+      "source": "local:meowju/skills",
+      "sourceType": "local",
+      "skillPath": "source/skill-security-auditor/SKILL.md",
+      "computedHash": "f28b194d07e441d91990aba4784ebd1bdd90960df6c96014225aae0da382c740"
+    }
+  }
+}
