@@ -1,0 +1,12 @@
+name: himalaya
+description: Use himalaya to list, read, search, compose, reply, forward, and organize IMAP/SMTP email.
+url: https://github.com/openclaw/openclaw/tree/main/skills/himalaya
+source: openclaw/openclaw
+sourcePath: skills/himalaya
+superpowers:
+  - Use himalaya to list, read, search, compose, reply, forward, and organize IMAP/SMTP email.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@himalaya
+  install_command: /plugin install himalaya
+  notes: Part of the OpenClaw ecosystem. Homepage: https://github.com/pimalaya/himalaya

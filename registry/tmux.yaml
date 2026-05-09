@@ -1,0 +1,12 @@
+name: tmux
+description: Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.
+url: https://github.com/openclaw/openclaw/tree/main/skills/tmux
+source: openclaw/openclaw
+sourcePath: skills/tmux
+superpowers:
+  - Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@tmux
+  install_command: /plugin install tmux
+  notes: Part of the OpenClaw ecosystem. Homepage: 

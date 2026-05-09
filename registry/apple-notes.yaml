@@ -1,0 +1,12 @@
+name: apple-notes
+description: Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.
+url: https://github.com/openclaw/openclaw/tree/main/skills/apple-notes
+source: openclaw/openclaw
+sourcePath: skills/apple-notes
+superpowers:
+  - Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@apple-notes
+  install_command: /plugin install apple-notes
+  notes: Part of the OpenClaw ecosystem. Homepage: https://github.com/antoniorodr/memo

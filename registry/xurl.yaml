@@ -1,0 +1,12 @@
+name: xurl
+description: Use xurl for authenticated X API posts, replies, search, DMs, media upload, followers, or raw v2 calls.
+url: https://github.com/openclaw/openclaw/tree/main/skills/xurl
+source: openclaw/openclaw
+sourcePath: skills/xurl
+superpowers:
+  - Use xurl for authenticated X API posts, replies, search, DMs, media upload, followers, or raw v2 calls.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@xurl
+  install_command: /plugin install xurl
+  notes: Part of the OpenClaw ecosystem. Homepage: 

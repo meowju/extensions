@@ -1,0 +1,12 @@
+name: sag
+description: ElevenLabs text-to-speech with mac-style say UX.
+url: https://github.com/openclaw/openclaw/tree/main/skills/sag
+source: openclaw/openclaw
+sourcePath: skills/sag
+superpowers:
+  - ElevenLabs text-to-speech with mac-style say UX.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@sag
+  install_command: /plugin install sag
+  notes: Part of the OpenClaw ecosystem. Homepage: https://sag.sh

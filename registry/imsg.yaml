@@ -1,0 +1,12 @@
+name: imsg
+description: iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.
+url: https://github.com/openclaw/openclaw/tree/main/skills/imsg
+source: openclaw/openclaw
+sourcePath: skills/imsg
+superpowers:
+  - iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@imsg
+  install_command: /plugin install imsg
+  notes: Part of the OpenClaw ecosystem. Homepage: https://imsg.to

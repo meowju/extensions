@@ -1,0 +1,12 @@
+name: model-usage
+description: Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.
+url: https://github.com/openclaw/openclaw/tree/main/skills/model-usage
+source: openclaw/openclaw
+sourcePath: skills/model-usage
+superpowers:
+  - Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@model-usage
+  install_command: /plugin install model-usage
+  notes: Part of the OpenClaw ecosystem. Homepage: 

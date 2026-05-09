@@ -1,0 +1,12 @@
+name: sherpa-onnx-tts
+description: Local text-to-speech via sherpa-onnx (offline, no cloud)
+url: https://github.com/openclaw/openclaw/tree/main/skills/sherpa-onnx-tts
+source: openclaw/openclaw
+sourcePath: skills/sherpa-onnx-tts
+superpowers:
+  - Local text-to-speech via sherpa-onnx (offline, no cloud)
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@sherpa-onnx-tts
+  install_command: /plugin install sherpa-onnx-tts
+  notes: Part of the OpenClaw ecosystem. Homepage: 

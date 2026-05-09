@@ -1,0 +1,12 @@
+name: video-frames
+description: Extract frames or short clips from videos using ffmpeg.
+url: https://github.com/openclaw/openclaw/tree/main/skills/video-frames
+source: openclaw/openclaw
+sourcePath: skills/video-frames
+superpowers:
+  - Extract frames or short clips from videos using ffmpeg.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@video-frames
+  install_command: /plugin install video-frames
+  notes: Part of the OpenClaw ecosystem. Homepage: https://ffmpeg.org

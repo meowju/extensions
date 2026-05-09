@@ -1,0 +1,12 @@
+name: mcporter
+description: List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.
+url: https://github.com/openclaw/openclaw/tree/main/skills/mcporter
+source: openclaw/openclaw
+sourcePath: skills/mcporter
+superpowers:
+  - List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@mcporter
+  install_command: /plugin install mcporter
+  notes: Part of the OpenClaw ecosystem. Homepage: http://mcporter.dev

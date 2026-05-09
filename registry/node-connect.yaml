@@ -1,0 +1,12 @@
+name: node-connect
+description: Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.
+url: https://github.com/openclaw/openclaw/tree/main/skills/node-connect
+source: openclaw/openclaw
+sourcePath: skills/node-connect
+superpowers:
+  - Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@node-connect
+  install_command: /plugin install node-connect
+  notes: Part of the OpenClaw ecosystem. Homepage: 

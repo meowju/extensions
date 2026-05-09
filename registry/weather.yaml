@@ -1,0 +1,12 @@
+name: weather
+description: Get current weather, rain, temperature, and forecasts for locations or travel planning.
+url: https://github.com/openclaw/openclaw/tree/main/skills/weather
+source: openclaw/openclaw
+sourcePath: skills/weather
+superpowers:
+  - Get current weather, rain, temperature, and forecasts for locations or travel planning.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@weather
+  install_command: /plugin install weather
+  notes: Part of the OpenClaw ecosystem. Homepage: https://wttr.in/:help

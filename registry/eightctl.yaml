@@ -1,0 +1,12 @@
+name: eightctl
+description: Control Eight Sleep pods (status, temperature, alarms, schedules).
+url: https://github.com/openclaw/openclaw/tree/main/skills/eightctl
+source: openclaw/openclaw
+sourcePath: skills/eightctl
+superpowers:
+  - Control Eight Sleep pods (status, temperature, alarms, schedules).
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@eightctl
+  install_command: /plugin install eightctl
+  notes: Part of the OpenClaw ecosystem. Homepage: https://eightctl.sh

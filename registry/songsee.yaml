@@ -1,0 +1,12 @@
+name: songsee
+description: Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.
+url: https://github.com/openclaw/openclaw/tree/main/skills/songsee
+source: openclaw/openclaw
+sourcePath: skills/songsee
+superpowers:
+  - Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@songsee
+  install_command: /plugin install songsee
+  notes: Part of the OpenClaw ecosystem. Homepage: https://github.com/steipete/songsee

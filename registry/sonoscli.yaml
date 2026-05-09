@@ -1,0 +1,12 @@
+name: sonoscli
+description: Control Sonos speakers (discover/status/play/volume/group).
+url: https://github.com/openclaw/openclaw/tree/main/skills/sonoscli
+source: openclaw/openclaw
+sourcePath: skills/sonoscli
+superpowers:
+  - Control Sonos speakers (discover/status/play/volume/group).
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@sonoscli
+  install_command: /plugin install sonoscli
+  notes: Part of the OpenClaw ecosystem. Homepage: https://sonoscli.sh

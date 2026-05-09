@@ -1,0 +1,12 @@
+name: wacli
+description: Send third-party WhatsApp messages or sync/search WhatsApp history via wacli, not normal active chats.
+url: https://github.com/openclaw/openclaw/tree/main/skills/wacli
+source: openclaw/openclaw
+sourcePath: skills/wacli
+superpowers:
+  - Send third-party WhatsApp messages or sync/search WhatsApp history via wacli, not normal active chats.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@wacli
+  install_command: /plugin install wacli
+  notes: Part of the OpenClaw ecosystem. Homepage: https://wacli.sh

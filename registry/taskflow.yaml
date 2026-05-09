@@ -1,0 +1,12 @@
+name: taskflow
+description: Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.
+url: https://github.com/openclaw/openclaw/tree/main/skills/taskflow
+source: openclaw/openclaw
+sourcePath: skills/taskflow
+superpowers:
+  - Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@taskflow
+  install_command: /plugin install taskflow
+  notes: Part of the OpenClaw ecosystem. Homepage: 

@@ -1,0 +1,12 @@
+name: things-mac
+description: Add, update, list, search, or inspect Things 3 todos, inbox, today, projects, areas, and tags on macOS.
+url: https://github.com/openclaw/openclaw/tree/main/skills/things-mac
+source: openclaw/openclaw
+sourcePath: skills/things-mac
+superpowers:
+  - Add, update, list, search, or inspect Things 3 todos, inbox, today, projects, areas, and tags on macOS.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@things-mac
+  install_command: /plugin install things-mac
+  notes: Part of the OpenClaw ecosystem. Homepage: https://github.com/ossianhempel/things3-cli

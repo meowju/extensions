@@ -1,0 +1,12 @@
+name: bluebubbles
+description: Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.
+url: https://github.com/openclaw/openclaw/tree/main/skills/bluebubbles
+source: openclaw/openclaw
+sourcePath: skills/bluebubbles
+superpowers:
+  - Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@bluebubbles
+  install_command: /plugin install bluebubbles
+  notes: Part of the OpenClaw ecosystem. Homepage: 

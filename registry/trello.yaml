@@ -1,0 +1,12 @@
+name: trello
+description: Manage Trello boards, lists, and cards via the Trello REST API.
+url: https://github.com/openclaw/openclaw/tree/main/skills/trello
+source: openclaw/openclaw
+sourcePath: skills/trello
+superpowers:
+  - Manage Trello boards, lists, and cards via the Trello REST API.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@trello
+  install_command: /plugin install trello
+  notes: Part of the OpenClaw ecosystem. Homepage: https://developer.atlassian.com/cloud/trello/rest/

@@ -1,0 +1,12 @@
+name: gog
+description: Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.
+url: https://github.com/openclaw/openclaw/tree/main/skills/gog
+source: openclaw/openclaw
+sourcePath: skills/gog
+superpowers:
+  - Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@gog
+  install_command: /plugin install gog
+  notes: Part of the OpenClaw ecosystem. Homepage: https://gogcli.sh

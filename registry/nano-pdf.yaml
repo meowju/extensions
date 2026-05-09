@@ -1,0 +1,12 @@
+name: nano-pdf
+description: Edit PDFs with natural-language instructions using the nano-pdf CLI.
+url: https://github.com/openclaw/openclaw/tree/main/skills/nano-pdf
+source: openclaw/openclaw
+sourcePath: skills/nano-pdf
+superpowers:
+  - Edit PDFs with natural-language instructions using the nano-pdf CLI.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@nano-pdf
+  install_command: /plugin install nano-pdf
+  notes: Part of the OpenClaw ecosystem. Homepage: https://pypi.org/project/nano-pdf/

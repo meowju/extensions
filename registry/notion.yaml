@@ -1,0 +1,12 @@
+name: notion
+description: Notion API for creating and managing pages, databases, and blocks.
+url: https://github.com/openclaw/openclaw/tree/main/skills/notion
+source: openclaw/openclaw
+sourcePath: skills/notion
+superpowers:
+  - Notion API for creating and managing pages, databases, and blocks.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@notion
+  install_command: /plugin install notion
+  notes: Part of the OpenClaw ecosystem. Homepage: https://developers.notion.com

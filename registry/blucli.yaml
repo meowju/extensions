@@ -1,0 +1,12 @@
+name: blucli
+description: BluOS CLI (blu) for discovery, playback, grouping, and volume.
+url: https://github.com/openclaw/openclaw/tree/main/skills/blucli
+source: openclaw/openclaw
+sourcePath: skills/blucli
+superpowers:
+  - BluOS CLI (blu) for discovery, playback, grouping, and volume.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@blucli
+  install_command: /plugin install blucli
+  notes: Part of the OpenClaw ecosystem. Homepage: https://blucli.sh

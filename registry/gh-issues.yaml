@@ -1,0 +1,12 @@
+name: gh-issues
+description: Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.
+url: https://github.com/openclaw/openclaw/tree/main/skills/gh-issues
+source: openclaw/openclaw
+sourcePath: skills/gh-issues
+superpowers:
+  - Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@gh-issues
+  install_command: /plugin install gh-issues
+  notes: Part of the OpenClaw ecosystem. Homepage: 

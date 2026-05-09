@@ -1,0 +1,12 @@
+name: bear-notes
+description: Create, search, and manage Bear notes via grizzly CLI.
+url: https://github.com/openclaw/openclaw/tree/main/skills/bear-notes
+source: openclaw/openclaw
+sourcePath: skills/bear-notes
+superpowers:
+  - Create, search, and manage Bear notes via grizzly CLI.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@bear-notes
+  install_command: /plugin install bear-notes
+  notes: Part of the OpenClaw ecosystem. Homepage: https://bear.app

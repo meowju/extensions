@@ -1,0 +1,12 @@
+name: obsidian
+description: Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.
+url: https://github.com/openclaw/openclaw/tree/main/skills/obsidian
+source: openclaw/openclaw
+sourcePath: skills/obsidian
+superpowers:
+  - Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@obsidian
+  install_command: /plugin install obsidian
+  notes: Part of the OpenClaw ecosystem. Homepage: https://help.obsidian.md

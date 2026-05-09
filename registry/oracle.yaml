@@ -1,0 +1,12 @@
+name: oracle
+description: Use oracle CLI to bundle prompts and files for second-model debugging, refactor, design, or review checks.
+url: https://github.com/openclaw/openclaw/tree/main/skills/oracle
+source: openclaw/openclaw
+sourcePath: skills/oracle
+superpowers:
+  - Use oracle CLI to bundle prompts and files for second-model debugging, refactor, design, or review checks.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@oracle
+  install_command: /plugin install oracle
+  notes: Part of the OpenClaw ecosystem. Homepage: https://askoracle.dev

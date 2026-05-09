@@ -1,0 +1,12 @@
+name: taskflow-inbox-triage
+description: Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.
+url: https://github.com/openclaw/openclaw/tree/main/skills/taskflow-inbox-triage
+source: openclaw/openclaw
+sourcePath: skills/taskflow-inbox-triage
+superpowers:
+  - Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@taskflow-inbox-triage
+  install_command: /plugin install taskflow-inbox-triage
+  notes: Part of the OpenClaw ecosystem. Homepage: 

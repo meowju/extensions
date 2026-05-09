@@ -1,0 +1,12 @@
+name: slack
+description: Use the Slack tool to react, pin/unpin, send, edit, delete messages, or fetch Slack member info.
+url: https://github.com/openclaw/openclaw/tree/main/skills/slack
+source: openclaw/openclaw
+sourcePath: skills/slack
+superpowers:
+  - Use the Slack tool to react, pin/unpin, send, edit, delete messages, or fetch Slack member info.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@slack
+  install_command: /plugin install slack
+  notes: Part of the OpenClaw ecosystem. Homepage: 

@@ -1,0 +1,12 @@
+name: canvas
+description: 
+url: https://github.com/openclaw/openclaw/tree/main/skills/canvas
+source: openclaw/openclaw
+sourcePath: skills/canvas
+superpowers:
+  - 
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@canvas
+  install_command: /plugin install canvas
+  notes: Part of the OpenClaw ecosystem. Homepage: 

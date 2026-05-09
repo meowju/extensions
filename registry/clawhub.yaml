@@ -1,0 +1,12 @@
+name: clawhub
+description: Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.
+url: https://github.com/openclaw/openclaw/tree/main/skills/clawhub
+source: openclaw/openclaw
+sourcePath: skills/clawhub
+superpowers:
+  - Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@clawhub
+  install_command: /plugin install clawhub
+  notes: Part of the OpenClaw ecosystem. Homepage: 

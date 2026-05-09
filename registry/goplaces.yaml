@@ -1,0 +1,12 @@
+name: goplaces
+description: Query Google Places for text search, place details, resolve, reviews, or scriptable JSON via goplaces.
+url: https://github.com/openclaw/openclaw/tree/main/skills/goplaces
+source: openclaw/openclaw
+sourcePath: skills/goplaces
+superpowers:
+  - Query Google Places for text search, place details, resolve, reviews, or scriptable JSON via goplaces.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@goplaces
+  install_command: /plugin install goplaces
+  notes: Part of the OpenClaw ecosystem. Homepage: https://github.com/steipete/goplaces

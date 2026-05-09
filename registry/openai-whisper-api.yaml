@@ -1,0 +1,12 @@
+name: openai-whisper-api
+description: Transcribe audio via OpenAI Audio Transcriptions API (Whisper).
+url: https://github.com/openclaw/openclaw/tree/main/skills/openai-whisper-api
+source: openclaw/openclaw
+sourcePath: skills/openai-whisper-api
+superpowers:
+  - Transcribe audio via OpenAI Audio Transcriptions API (Whisper).
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@openai-whisper-api
+  install_command: /plugin install openai-whisper-api
+  notes: Part of the OpenClaw ecosystem. Homepage: https://platform.openai.com/docs/guides/speech-to-text

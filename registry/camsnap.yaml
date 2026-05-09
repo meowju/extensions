@@ -1,0 +1,12 @@
+name: camsnap
+description: Capture frames or clips from RTSP/ONVIF cameras.
+url: https://github.com/openclaw/openclaw/tree/main/skills/camsnap
+source: openclaw/openclaw
+sourcePath: skills/camsnap
+superpowers:
+  - Capture frames or clips from RTSP/ONVIF cameras.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@camsnap
+  install_command: /plugin install camsnap
+  notes: Part of the OpenClaw ecosystem. Homepage: https://camsnap.ai

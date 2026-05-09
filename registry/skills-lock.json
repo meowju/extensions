@@ -7,190 +7,592 @@
       "skillPath": "source/skill-security-auditor/SKILL.md",
       "computedHash": "f28b194d07e441d91990aba4784ebd1bdd90960df6c96014225aae0da382c740"
     },
+    "1password": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/1password.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/1password",
+      "computedHash": "N/A"
+    },
     "ag2": {
-      "source": "ecosystem:ag2.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/ag2.yaml",
+      "url": "https://github.com/ag2ai/ag2",
+      "computedHash": "N/A"
+    },
+    "apple-notes": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/apple-notes.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/apple-notes",
+      "computedHash": "N/A"
+    },
+    "apple-reminders": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/apple-reminders.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/apple-reminders",
       "computedHash": "N/A"
     },
     "autoresearch": {
-      "source": "ecosystem:autoresearch.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/autoresearch.yaml",
+      "url": "https://github.com/uditgoenka/autoresearch",
       "computedHash": "N/A"
     },
     "awesome-claude-code-subagents": {
-      "source": "ecosystem:awesome-claude-code-subagents.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/awesome-claude-code-subagents.yaml",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "computedHash": "N/A"
+    },
+    "bear-notes": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/bear-notes.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/bear-notes",
+      "computedHash": "N/A"
+    },
+    "blogwatcher": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/blogwatcher.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/blogwatcher",
+      "computedHash": "N/A"
+    },
+    "blucli": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/blucli.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/blucli",
+      "computedHash": "N/A"
+    },
+    "bluebubbles": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/bluebubbles.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/bluebubbles",
+      "computedHash": "N/A"
+    },
+    "camsnap": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/camsnap.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/camsnap",
+      "computedHash": "N/A"
+    },
+    "canvas": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/canvas.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/canvas",
       "computedHash": "N/A"
     },
     "claude-mem": {
-      "source": "ecosystem:claude-mem.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/claude-mem.yaml",
+      "url": "https://github.com/thedotmack/claude-mem",
       "computedHash": "N/A"
     },
     "claude-scientific-skills": {
-      "source": "ecosystem:claude-scientific-skills.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/claude-scientific-skills.yaml",
+      "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
       "computedHash": "N/A"
     },
     "claude-skills": {
-      "source": "ecosystem:claude-skills.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/claude-skills.yaml",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "computedHash": "N/A"
+    },
+    "clawhub": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/clawhub.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/clawhub",
+      "computedHash": "N/A"
+    },
+    "coding-agent": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/coding-agent.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/coding-agent",
       "computedHash": "N/A"
     },
     "creative-mcp-servers": {
-      "source": "ecosystem:creative-mcp-servers.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/creative-mcp-servers.yaml",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
       "computedHash": "N/A"
     },
     "crew-ai": {
-      "source": "ecosystem:crew-ai.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/crew-ai.yaml",
+      "url": "https://github.com/crewAIInc/crewAI",
       "computedHash": "N/A"
     },
     "dify": {
-      "source": "ecosystem:dify.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/dify.yaml",
+      "url": "https://github.com/langgenius/dify",
+      "computedHash": "N/A"
+    },
+    "discord": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/discord.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/discord",
+      "computedHash": "N/A"
+    },
+    "eightctl": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/eightctl.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/eightctl",
       "computedHash": "N/A"
     },
     "everything-claude-code": {
-      "source": "ecosystem:everything-claude-code.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/everything-claude-code.yaml",
+      "url": "https://github.com/affaan-m/everything-claude-code",
       "computedHash": "N/A"
     },
     "gemini-api-docs-mcp": {
-      "source": "ecosystem:gemini-api-docs-mcp.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/gemini-api-docs-mcp.yaml",
+      "url": "https://github.com/google-gemini/gemini-api-docs-mcp",
       "computedHash": "N/A"
     },
     "gemini-cli": {
-      "source": "ecosystem:gemini-cli.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/gemini-cli.yaml",
+      "url": "https://github.com/google-gemini/gemini-cli",
       "computedHash": "N/A"
     },
     "gemini-interactions-api": {
-      "source": "ecosystem:gemini-interactions-api.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/gemini-interactions-api.yaml",
+      "url": "https://github.com/google-gemini/gemini-interactions-api",
+      "computedHash": "N/A"
+    },
+    "gemini": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/gemini.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/gemini",
+      "computedHash": "N/A"
+    },
+    "gh-issues": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/gh-issues.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/gh-issues",
+      "computedHash": "N/A"
+    },
+    "gifgrep": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/gifgrep.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/gifgrep",
+      "computedHash": "N/A"
+    },
+    "github": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/github.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/github",
+      "computedHash": "N/A"
+    },
+    "gog": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/gog.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/gog",
+      "computedHash": "N/A"
+    },
+    "goplaces": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/goplaces.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/goplaces",
       "computedHash": "N/A"
     },
     "gsd": {
-      "source": "ecosystem:gsd.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/gsd.yaml",
+      "url": "https://github.com/gsd-build/get-shit-done",
       "computedHash": "N/A"
     },
     "gstack": {
-      "source": "ecosystem:gstack.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/gstack.yaml",
+      "url": "https://github.com/garrytan/gstack",
+      "computedHash": "N/A"
+    },
+    "healthcheck": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/healthcheck.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/healthcheck",
+      "computedHash": "N/A"
+    },
+    "himalaya": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/himalaya.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/himalaya",
+      "computedHash": "N/A"
+    },
+    "imsg": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/imsg.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/imsg",
       "computedHash": "N/A"
     },
     "langgraph": {
-      "source": "ecosystem:langgraph.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/langgraph.yaml",
+      "url": "https://github.com/langchain-ai/langgraph",
       "computedHash": "N/A"
     },
     "mcp-firewall": {
-      "source": "ecosystem:mcp-firewall.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/mcp-firewall.yaml",
+      "url": "https://github.com/dzervas/mcp-firewall",
       "computedHash": "N/A"
     },
     "mcp-memory-server": {
-      "source": "ecosystem:mcp-memory-server.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/mcp-memory-server.yaml",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
       "computedHash": "N/A"
     },
     "mcp-servers": {
-      "source": "ecosystem:mcp-servers.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/mcp-servers.yaml",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "computedHash": "N/A"
+    },
+    "mcporter": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/mcporter.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/mcporter",
       "computedHash": "N/A"
     },
     "memento": {
-      "source": "ecosystem:memento.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/memento.yaml",
+      "url": "https://github.com/mandel-macaque/memento",
       "computedHash": "N/A"
     },
     "mle-bench": {
-      "source": "ecosystem:mle-bench.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/mle-bench.yaml",
+      "url": "https://github.com/openai/mle-bench",
+      "computedHash": "N/A"
+    },
+    "model-usage": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/model-usage.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/model-usage",
       "computedHash": "N/A"
     },
     "n8n": {
-      "source": "ecosystem:n8n.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/n8n.yaml",
+      "url": "https://github.com/n8n-io/n8n",
+      "computedHash": "N/A"
+    },
+    "nano-pdf": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/nano-pdf.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/nano-pdf",
       "computedHash": "N/A"
     },
     "next-ai-draw-io": {
-      "source": "ecosystem:next-ai-draw-io.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/next-ai-draw-io.yaml",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "computedHash": "N/A"
+    },
+    "node-connect": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/node-connect.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/node-connect",
+      "computedHash": "N/A"
+    },
+    "notion": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/notion.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/notion",
+      "computedHash": "N/A"
+    },
+    "obsidian": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/obsidian.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/obsidian",
       "computedHash": "N/A"
     },
     "ollama": {
-      "source": "ecosystem:ollama.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/ollama.yaml",
+      "url": "https://github.com/ollama/ollama",
       "computedHash": "N/A"
     },
     "openai-assistant-swarm": {
-      "source": "ecosystem:openai-assistant-swarm.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/openai-assistant-swarm.yaml",
+      "url": "https://github.com/Mintplex-Labs/openai-assistant-swarm",
       "computedHash": "N/A"
     },
     "openai-swarm": {
-      "source": "ecosystem:openai-swarm.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/openai-swarm.yaml",
+      "url": "https://github.com/openai/swarm",
+      "computedHash": "N/A"
+    },
+    "openai-whisper-api": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/openai-whisper-api.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/openai-whisper-api",
+      "computedHash": "N/A"
+    },
+    "openai-whisper": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/openai-whisper.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/openai-whisper",
+      "computedHash": "N/A"
+    },
+    "openhue": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/openhue.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/openhue",
+      "computedHash": "N/A"
+    },
+    "oracle": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/oracle.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/oracle",
+      "computedHash": "N/A"
+    },
+    "ordercli": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/ordercli.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/ordercli",
+      "computedHash": "N/A"
+    },
+    "peekaboo": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/peekaboo.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/peekaboo",
       "computedHash": "N/A"
     },
     "planetscale-agent-skill": {
-      "source": "ecosystem:planetscale-agent-skill.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/planetscale-agent-skill.yaml",
+      "url": "https://github.com/planetscale/agent-skill",
       "computedHash": "N/A"
     },
     "ragflow": {
-      "source": "ecosystem:ragflow.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/ragflow.yaml",
+      "url": "https://github.com/infiniflow/ragflow",
+      "computedHash": "N/A"
+    },
+    "sag": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/sag.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/sag",
       "computedHash": "N/A"
     },
     "sas-audio-processor": {
-      "source": "ecosystem:sas-audio-processor.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/sas-audio-processor.yaml",
+      "url": "https://github.com/shiehn/sas-audio-processor",
+      "computedHash": "N/A"
+    },
+    "session-logs": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/session-logs.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/session-logs",
+      "computedHash": "N/A"
+    },
+    "sherpa-onnx-tts": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/sherpa-onnx-tts.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/sherpa-onnx-tts",
+      "computedHash": "N/A"
+    },
+    "skill-creator": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/skill-creator.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/skill-creator",
+      "computedHash": "N/A"
+    },
+    "slack": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/slack.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/slack",
+      "computedHash": "N/A"
+    },
+    "songsee": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/songsee.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/songsee",
+      "computedHash": "N/A"
+    },
+    "sonoscli": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/sonoscli.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/sonoscli",
+      "computedHash": "N/A"
+    },
+    "spotify-player": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/spotify-player.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/spotify-player",
+      "computedHash": "N/A"
+    },
+    "summarize": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/summarize.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/summarize",
       "computedHash": "N/A"
     },
     "superpowers": {
-      "source": "ecosystem:superpowers.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/superpowers.yaml",
+      "url": "https://github.com/obra/superpowers",
       "computedHash": "N/A"
     },
     "system-prompts": {
-      "source": "ecosystem:system-prompts.yaml",
+      "source": "ecosystem",
       "sourceType": "registry",
       "skillPath": "registry/system-prompts.yaml",
+      "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+      "computedHash": "N/A"
+    },
+    "taskflow-inbox-triage": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/taskflow-inbox-triage.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/taskflow-inbox-triage",
+      "computedHash": "N/A"
+    },
+    "taskflow": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/taskflow.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/taskflow",
+      "computedHash": "N/A"
+    },
+    "things-mac": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/things-mac.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/things-mac",
+      "computedHash": "N/A"
+    },
+    "tmux": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/tmux.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/tmux",
+      "computedHash": "N/A"
+    },
+    "trello": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/trello.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/trello",
+      "computedHash": "N/A"
+    },
+    "video-frames": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/video-frames.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/video-frames",
+      "computedHash": "N/A"
+    },
+    "voice-call": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/voice-call.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/voice-call",
+      "computedHash": "N/A"
+    },
+    "wacli": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/wacli.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/wacli",
+      "computedHash": "N/A"
+    },
+    "weather": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/weather.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/weather",
+      "computedHash": "N/A"
+    },
+    "xurl": {
+      "source": "openclaw/openclaw",
+      "sourceType": "external",
+      "skillPath": "registry/xurl.yaml",
+      "url": "https://github.com/openclaw/openclaw/tree/main/skills/xurl",
       "computedHash": "N/A"
     }
   }

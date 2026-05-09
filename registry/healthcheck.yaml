@@ -1,0 +1,12 @@
+name: healthcheck
+description: Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.
+url: https://github.com/openclaw/openclaw/tree/main/skills/healthcheck
+source: openclaw/openclaw
+sourcePath: skills/healthcheck
+superpowers:
+  - Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@healthcheck
+  install_command: /plugin install healthcheck
+  notes: Part of the OpenClaw ecosystem. Homepage: 

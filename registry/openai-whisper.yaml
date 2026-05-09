@@ -1,0 +1,12 @@
+name: openai-whisper
+description: Local speech-to-text with the Whisper CLI (no API key).
+url: https://github.com/openclaw/openclaw/tree/main/skills/openai-whisper
+source: openclaw/openclaw
+sourcePath: skills/openai-whisper
+superpowers:
+  - Local speech-to-text with the Whisper CLI (no API key).
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@openai-whisper
+  install_command: /plugin install openai-whisper
+  notes: Part of the OpenClaw ecosystem. Homepage: https://openai.com/research/whisper

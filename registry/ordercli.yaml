@@ -1,0 +1,12 @@
+name: ordercli
+description: Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).
+url: https://github.com/openclaw/openclaw/tree/main/skills/ordercli
+source: openclaw/openclaw
+sourcePath: skills/ordercli
+superpowers:
+  - Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@ordercli
+  install_command: /plugin install ordercli
+  notes: Part of the OpenClaw ecosystem. Homepage: https://ordercli.sh

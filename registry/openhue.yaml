@@ -1,0 +1,12 @@
+name: openhue
+description: Control Philips Hue lights and scenes via the OpenHue CLI.
+url: https://github.com/openclaw/openclaw/tree/main/skills/openhue
+source: openclaw/openclaw
+sourcePath: skills/openhue
+superpowers:
+  - Control Philips Hue lights and scenes via the OpenHue CLI.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@openhue
+  install_command: /plugin install openhue
+  notes: Part of the OpenClaw ecosystem. Homepage: https://www.openhue.io/cli

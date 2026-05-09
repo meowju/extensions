@@ -1,0 +1,12 @@
+name: voice-call
+description: Start voice calls via the OpenClaw voice-call plugin.
+url: https://github.com/openclaw/openclaw/tree/main/skills/voice-call
+source: openclaw/openclaw
+sourcePath: skills/voice-call
+superpowers:
+  - Start voice calls via the OpenClaw voice-call plugin.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@voice-call
+  install_command: /plugin install voice-call
+  notes: Part of the OpenClaw ecosystem. Homepage: 

@@ -1,0 +1,12 @@
+name: spotify-player
+description: Terminal Spotify playback/search via spogo (preferred) or spotify_player.
+url: https://github.com/openclaw/openclaw/tree/main/skills/spotify-player
+source: openclaw/openclaw
+sourcePath: skills/spotify-player
+superpowers:
+  - Terminal Spotify playback/search via spogo (preferred) or spotify_player.
+installation:
+  type: marketplace_plugin
+  add_command: /plugin marketplace add openclaw/openclaw@spotify-player
+  install_command: /plugin install spotify-player
+  notes: Part of the OpenClaw ecosystem. Homepage: https://www.spotify.com
